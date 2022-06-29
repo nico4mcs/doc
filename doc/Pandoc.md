@@ -4,7 +4,7 @@ Pandoc is a console application to convert between documentation file types. E.g
 - HTML
 - Docx
 - PDF
-- ![80](LaTeX_logo.svg)
+- ![80](./media/LaTeX_logo.svg)
 ## Using Pandoc
 You can simply use pandoc in the terminal. If you want to convert a file to another file you can use the following command:
 ```bash
