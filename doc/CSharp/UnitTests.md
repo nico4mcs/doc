@@ -12,7 +12,7 @@ It automatically contains a test class.
 Every class containing at least one test must have the `[TestClass]` attribute.
 
 ### 2. Function
-Now you can start by adding a test function. It's important to add the `[TestMethod]` attribute (keep in mind to use a [Naming Convention](#-Naming-convention)).
+Now you can start by adding a test function. It's important to add the `[TestMethod]` attribute (keep in mind to use a [Naming Convention](#Naming-convention)).
 
 A simple test function could look like this:
 
