@@ -8,7 +8,7 @@ DC power is constant. That means, that the direction always stays the
 same. DC is needed e.g. for batteries, which includes all devices with a
 battery pack, or TVs
 
-![](doc/media/DC.jpeg)<br>
+![](./media/DC.jpeg)<br>
 Abbildung 139: DC power
 
 ## AC Alternate current
@@ -17,7 +17,7 @@ AC power has an amount of Hz e.g. in Switzerland it has 50Hz, which
 means it changes the direction 100 times a second. AC is needed for
 everything with a motor, like a mixer. But also, a stove needs AC power.
 
-![](AC.jpeg)<br>
+![](./media/AC.jpeg)<br>
 Abbildung 140: AC power
 
 ### Frequencies
