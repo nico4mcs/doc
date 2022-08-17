@@ -13,7 +13,7 @@ Abbildung 139: DC power
 
 AC power has an amount of Hz e.g. in Switzerland it has 50Hz, which means it changes the direction 100 times a second. AC is needed for everything with a motor, like a mixer. But also, a stove needs AC power.
 
-![](AC.jpeg)<br>
+![](./media/AC.jpeg)<br>
 Abbildung 140: AC power
 
 ### Frequencies

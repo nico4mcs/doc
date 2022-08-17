@@ -37,7 +37,7 @@ A typical  test Function is divided into 3 sections:
 - Assert
 
 #### Arrange
-In the Arrange section, you introduce variables which you need in the [Act Section](#-Act).
+In the Arrange section, you introduce variables which you need in the Act section.
 
 #### Act
 In the Act section, you call the function(-s) you want to test.
