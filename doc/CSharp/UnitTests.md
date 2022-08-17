@@ -6,13 +6,13 @@ With unittests you can test a function. The goal of it is to find mistakes in fu
 ### 1. Class / Project
 In Visual Studio you can create a Test Project e.g. the following:
 
-![[Pasted image 20220701114850.png]]
+![](./media/UnittestClass.png)
 
 It automatically contains a test class.
 Every class containing at least one test must have the `[TestClass]` attribute.
 
 ### 2. Function
-Now you can start by adding a test function. It's important to add the `[TestMethod]` attribute (keep in mind to use a [Naming Convention](#-Naming-convention)).
+Now you can start by adding a test function. It's important to add the `[TestMethod]` attribute (keep in mind to use a [Naming Convention](#Naming-convention)).
 
 A simple test function could look like this:
 
@@ -52,7 +52,7 @@ With `DataRow` you can test different parameters with the same function
 ## Calling a test
 If you have opened the Test Explorer (View/Test Explorer) you will see all the Tests. Now you can right-click a test and run it.
 
-## Mocking
+## Mocking (Moq)
 With Mocks you can create an Object which can be used by the function. 
 If you want to test the following function you need to have an `IShape` object:
 
