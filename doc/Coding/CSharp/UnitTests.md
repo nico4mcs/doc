@@ -6,7 +6,7 @@ With unittests you can test a function. The goal of it is to find mistakes in fu
 ### 1. Class / Project
 In Visual Studio you can create a Test Project e.g. the following:
 
-![](./media/UnittestClass.png)
+![](UnittestClass.png)
 
 It automatically contains a test class.
 Every class containing at least one test must have the `[TestClass]` attribute.
