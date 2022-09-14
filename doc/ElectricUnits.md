@@ -28,44 +28,24 @@ A complete list of the different frequencies can be found here:
 But what happens if you plug a 50Hz device into a 60Hz plug?
 
 If it is a DC device, it will convert the power, and it does not affect the function of the device. But if it is an AC device, it will run slightly faster. This doesn't have to do anything, but it can overheat and break.
-
 #### Net Time
-
 The net time is the time measured by the frequency of the AC power. E.g. ovens use it in the built-in clock. If the frequency is less than 50Hz, the net time is too slow. If it's more, the net time is too fast. The power distributors constantly try to keep the net time as close as possible to the actual time.
-
 ## Units
 In this chapter, the different units of electricity are explained.
 ### Coulomb - Q
 Minus one coulomb is equal to the amount of charge from 6,25 * 10<sup>18</sup> electrons.
 Unit: C
-
-## Potential Energy - U<sub>E</sub>
+### Potential Energy - U<sub>E</sub>
 **Unit: J**
 **Formulas**
 $U_E=k_e\frac{Q_1Q_2}{r}$
 $k_e$ is called the Coulomb constant. Its value is $8.99*10^9 kg*m^3*s^{-4}*A^{-2}$
 ---
 Potential energy is the energy difference of two states.
-Example:
-We have a stair (One Step is 1 m) with a box $F_g=1N$. On the first step, it has no potential energy.
-<svg width="250" height="250" viewBox="0 0 500 600">
 
-<path d="
-	  M000,600
-	  L000,500
-	  L100,500
-	  L100,400
-	  L200,400
-	  L200,300
-	  L300,300
-	  L300,200
-	  L400,200
-	  L400,100
-	  L500,100
-	  L500,600"
-	  fill="gray"/>
-<rect  width="60" height="60" x="20" y="440" fill="red"/>
-</svg>
+**Example with gravity:**
+We have a stair (One Step is 1 m) with a box $F_g=1N$. On the first step, it has no potential energy.
+![](./media/Stair01.svg)
 If you move the cube up one step, it now has a potential energy of 1J ($1J=1N*1M$)
 <svg width="250" height="250" viewBox="0 0 500 600">
 
@@ -113,8 +93,7 @@ Now the potential energy is 3J
 $U=R*I$
 $U=\frac{U_E}{Q}$ 
 ---
-
-Voltage is the amount of potential energy per coulomb
+Voltage is the amount of potential energy per coulomb.
 If we look at the example from before, we see that the cube has a potential energy of 3J
 <svg width="250" height="250" viewBox="0 0 500 600">
 
