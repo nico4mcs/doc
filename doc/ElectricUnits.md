@@ -54,7 +54,7 @@ If you move the cube up one step, it now has a potential energy of 1J ($1J=1N*1M
 
 Now the potential energy is 3J
 
-![Stair03](https://user-images.githubusercontent.com/81629531/190325538-d100dd02-a078-44ef-a96a-383161cc9bb9.svg)
+![Stair03](https://user-images.githubusercontent.com/81629531/190325910-7ad916fe-09fe-437b-818b-9e3bc3589be5.svg)
 
 ### Voltage - U
 **Unit: V**
@@ -65,11 +65,11 @@ $U=\frac{U_E}{Q}$
 Voltage is the amount of potential energy per coulomb.
 If we look at the example from before, we see that the cube has a potential energy of 3J
 
-![Stair03](https://user-images.githubusercontent.com/81629531/190325575-e37a6bab-460a-4e66-b58a-b3a5bd9be6e2.svg)
+![Stair03](https://user-images.githubusercontent.com/81629531/190325935-84ba824a-8d8b-4e1e-8718-c8baad2179df.svg)
 
 If we take two cubes, we have a potential energy of 6J or 3J per cube. And that is the idea of voltage, Joule per Unit.
 
-![Stair04](https://user-images.githubusercontent.com/81629531/190325603-eff78b2c-edba-4131-803b-7d6371bf9aea.svg)
+![Stair04](https://user-images.githubusercontent.com/81629531/190325953-71a69e04-23ac-487c-a870-14b7a39426c7.svg)
 
 Using that in electricity, we can use the following formula: $U=\frac{U_E}{Q}$ or with Units: $V=\frac{J}{C}$
 ### Resistance - R
