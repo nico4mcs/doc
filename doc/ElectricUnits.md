@@ -6,18 +6,17 @@ In this chapter, we will take a look at the differences between AC and DC.
 
 DC is constant. This means, that it always flows from + to -. DC is usually used for devices with a battery or TVs
 
-![](./media/DC.jpeg)
+![](./media/DC.jpeg)<br>
 Image 1: DC
 
 ## AC Alternating Current
 
 AC constantly changes its direction. The amount of repetitions (2 direction changes) per second is called Hz e.g. in Switzerland, it is 50Hz, which means it changes the direction 100 times a second. AC is usually used for everything with a motor, like a mixer. But a stove also needs AC power.
 
-![](./media/AC.jpeg)
+![](./media/AC.jpeg)<br>
 Image 2: AC
 
 ### Frequencies
-
 As said before, Switzerland uses a frequency of 50Hz. Some
 countries e.g. the USA use 60Hz.
 
@@ -37,39 +36,51 @@ Minus one coulomb is equal to the amount of charge from 6,25 * 10<sup>18</sup> e
 Unit: C
 ### Potential Energy - U<sub>E</sub>
 **Unit: J**
+
 **Formulas**
+
 $U_E=k_e\frac{Q_1Q_2}{r}$
-$k_e$ is called the Coulomb constant. Its value is $8.99*10^9 kg*m^3*s^{-4}*A^{-2}$
----
+
+$k_e$ is called the Coulomb constant. 
+Its value is $8,99\*10^9\frac{N\*m^2}{C^2}$
+
+-----
+
 Potential energy is the energy difference of two states.
 
 **Example with gravity:**
 We have a stair (One Step is 1 m) with a box $F_g=1N$. On the first step, it has no potential energy.
 
-![Stair01](https://user-images.githubusercontent.com/81629531/190324153-f3ee4a45-a9f4-4560-88f5-59509da6c900.svg)
+![](./media/Stair01.svg)
 
-If you move the cube up one step, it now has a potential energy of 1J ($1J=1N*1M$)
+If you move the cube up one step, it now has a potential energy of 1J ($1J=1N\*1M$)
 
-![Stair02](https://user-images.githubusercontent.com/81629531/190325493-f094fa7c-5110-44ac-b34b-90761ff0ef51.svg)
+![](./media/Stair02.svg)
 
 Now the potential energy is 3J
 
+![](./media/Stair03.svg)
 ![Stair03](https://user-images.githubusercontent.com/81629531/190325910-7ad916fe-09fe-437b-818b-9e3bc3589be5.svg)
 
 ### Voltage - U
+
 **Unit: V**
+
 **Formulas**
+
 $U=R*I$
+
 $U=\frac{U_E}{Q}$ 
+
 ---
 Voltage is the amount of potential energy per coulomb.
 If we look at the example from before, we see that the cube has a potential energy of 3J
 
-![Stair03](https://user-images.githubusercontent.com/81629531/190325935-84ba824a-8d8b-4e1e-8718-c8baad2179df.svg)
+![](./media/Stair03.svg)
 
 If we take two cubes, we have a potential energy of 6J or 3J per cube. And that is the idea of voltage, Joule per Unit.
 
-![Stair04](https://user-images.githubusercontent.com/81629531/190325953-71a69e04-23ac-487c-a870-14b7a39426c7.svg)
+![](./media/Stair04.svg)
 
 Using that in electricity, we can use the following formula: $U=\frac{U_E}{Q}$ or with Units: $V=\frac{J}{C}$
 ### Resistance - R
