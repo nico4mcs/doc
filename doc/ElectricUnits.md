@@ -49,45 +49,12 @@ We have a stair (One Step is 1 m) with a box $F_g=1N$. On the first step, it ha
 ![Stair01](https://user-images.githubusercontent.com/81629531/190324153-f3ee4a45-a9f4-4560-88f5-59509da6c900.svg)
 
 If you move the cube up one step, it now has a potential energy of 1J ($1J=1N*1M$)
-<svg width="250" height="250" viewBox="0 0 500 600" xmlns="http://www.w3.org/2000/svg">
 
-<path d="
-	  M000,600
-	  L000,500
-	  L100,500
-	  L100,400
-	  L200,400
-	  L200,300
-	  L300,300
-	  L300,200
-	  L400,200
-	  L400,100
-	  L500,100
-	  L500,600"
-	  fill="gray"/>
-<rect  width="60" height="60" x="120" y="340" fill="red" />
-<rect  width="60" height="60" x="20" y="440" fill="transparent" stroke="red" stroke-width="5" stroke-dasharray="12,10"/>
-</svg>
+![Stair02](https://user-images.githubusercontent.com/81629531/190325493-f094fa7c-5110-44ac-b34b-90761ff0ef51.svg)
+
 Now the potential energy is 3J
-<svg width="250" height="250" viewBox="0 0 500 600">
 
-<path d="
-	  M000,600
-	  L000,500
-	  L100,500
-	  L100,400
-	  L200,400
-	  L200,300
-	  L300,300
-	  L300,200
-	  L400,200
-	  L400,100
-	  L500,100
-	  L500,600"
-	  fill="gray"/>
-<rect  width="60" height="60" x="320" y="140" fill="red" />
-<rect  width="60" height="60" x="20" y="440" fill="transparent" stroke="red" stroke-width="5" stroke-dasharray="12,10"/>
-</svg>
+![Stair03](https://user-images.githubusercontent.com/81629531/190325538-d100dd02-a078-44ef-a96a-383161cc9bb9.svg)
 
 ### Voltage - U
 **Unit: V**
@@ -97,46 +64,13 @@ $U=\frac{U_E}{Q}$
 ---
 Voltage is the amount of potential energy per coulomb.
 If we look at the example from before, we see that the cube has a potential energy of 3J
-<svg width="250" height="250" viewBox="0 0 500 600">
 
-<path d="
-	  M000,600
-	  L000,500
-	  L100,500
-	  L100,400
-	  L200,400
-	  L200,300
-	  L300,300
-	  L300,200
-	  L400,200
-	  L400,100
-	  L500,100
-	  L500,600"
-	  fill="gray"/>
-<rect  width="60" height="60" x="320" y="140" fill="red" />
-<rect  width="60" height="60" x="20" y="440" fill="transparent" stroke="red" stroke-width="5" stroke-dasharray="12,10"/>
-</svg>
+![Stair03](https://user-images.githubusercontent.com/81629531/190325575-e37a6bab-460a-4e66-b58a-b3a5bd9be6e2.svg)
+
 If we take two cubes, we have a potential energy of 6J or 3J per cube. And that is the idea of voltage, Joule per Unit.
-<svg width="250" height="250" viewBox="0 0 520 600">
 
-<path d="
-	  M000,600
-	  L000,500
-	  L100,500
-	  L100,400
-	  L200,400
-	  L200,300
-	  L300,300
-	  L300,200
-	  L420,200
-	  L420,100
-	  L520,100
-	  L520,600"
-	  fill="gray"/>
-<rect  width="60" height="60" x="300" y="140" fill="blue" />
-<rect  width="60" height="60" x="360" y="140" fill="red" />
-<rect  width="60" height="60" x="20" y="440" fill="transparent" stroke="red" stroke-width="5" stroke-dasharray="12,10"/>
-</svg>
+![Stair04](https://user-images.githubusercontent.com/81629531/190325603-eff78b2c-edba-4131-803b-7d6371bf9aea.svg)
+
 Using that in electricity, we can use the following formula: $U=\frac{U_E}{Q}$ or with Units: $V=\frac{J}{C}$
 ### Resistance - R
 **Unit: Ω**
