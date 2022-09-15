@@ -35,39 +35,37 @@ In this chapter, the different units of electricity are explained.
 Minus one coulomb is equal to the amount of charge from 6,25 * 10<sup>18</sup> electrons. Minus because a coulomb is positively charged, electrons negatively
 ### Potential Energy - U<sub>E</sub>
 **Unit: J**
-<details>
-<summary> <b>Formulas</b> </summary>
+
+**Formulas:**
 <details>
 <summary>$U_E=k_e\frac{Q_1Q_2}{r}$</summary>
 	
-$k_e$ is called the Coulomb constant. 
-Its value is $8,99\*10^9\frac{N\*m^2}{C^2}$
+> $k_e$ is called the Coulomb constant. 
+> Its value is $8,99\*10^9\frac{N\*m^2}{C^2}$
+> 
+> $Q_1$ and $Q_2$ are the charges of two objects.
+> 
+> $r$ is the distance between the two objects
 
-$Q_1$ and $Q_2$ are the charges of two objects.
-
-$r$ is the distance between the two objects
-
-</details>
 </details>
 
 Potential energy is the energy difference of two states.
 #### Potential Energy - E
 **Unit: J**
-<details>
-<summary> <b>Formulas</b> </summary>
+
+**Formulas**
 <details>
 <summary>$E=F*d$</summary>
 	
-$F$ is the force acting on the object. 
+> $F$ is the force acting on the object. 
+>
+> $d$ is the distance the object was moved
 
-$d$ is the distance the object was moved
-
-</details>
 </details>
 
 We first have to understand potential energy so that we can understand electric potential energy. 
 **Example with gravity:**
-In this example we have a stair (One Step is 1 m) with a box $F_g=1N$($F_g$ means weight force). We will take the first step as our first state. As reference, it has a height of 0.
+In this example we have a stair (One Step is 1 m) with a box $F_g=1N$ ( $F_g$ means weight force). We will take the first step as our first state. As reference, it has a height of 0.
 
 ![](./media/Stair01.svg)
 
@@ -81,29 +79,27 @@ Now the potential energy is 3J.
 
 #### Electric
 Now that we understand the concept of potential energy we can go to the electric potential energy.
-
+In the following picture you can see, that there is an LED. In here we have two states, before and after the LED. The concept is exaclty the same as in the potential energy.
 ![](./media/circuit.svg)
 
 ### Voltage - U
 
 **Unit: V**
 
-<details>
-<summary> <b>Formulas</b> </summary>
+**Formulas**
 <details>
 <summary>$U=R*I$</summary>
 	
-$R$ is the resistance. 
-
-$I$ is the current.
+> $R$ is the resistance. 
+> 
+> $I$ is the current.
 </details>
 <details>
 <summary>$U=\frac{U_E}{Q}$ </summary>
 	
-$U_E$ is the electric potential energy
-
-$Q$ is the charge.
-</details>
+> $U_E$ is the electric potential energy
+>
+> $Q$ is the charge.
 </details>
 
 Voltage is the amount of potential energy per coulomb.
@@ -115,7 +111,7 @@ If we take two cubes, we have a potential energy of 6J or 3J per cube. And that 
 
 ![](./media/Stair04.svg)
 
-Using that in electricity, we can use the following formula: $U=\frac{U_E}{Q}$ or with Units: $V=\frac{J}{C}$
+Using that in electricity, we can substitute the cube. It now is 1C, that gives us the following formula: $U=\frac{U_E}{Q}$ or with Units: $V=\frac{J}{C}$
 ### Resistance - R
 **Unit: Ω**
 
@@ -128,50 +124,3 @@ Current is the amount of coulomb per second.
 **Unit: W**
 
 Electrical power is the amount of energy per second.
-## Formulas
-<svg width="200" height="200" viewbox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
-
-<path 
-	  d="
-	  M0,395
-	  L200,0
-	  L400,395
-	  z"
-	  fill="gray"
-	  stroke="Black"
-	  stroke-width="10"
-	  /> 
-<path 
-	  d="
-	  M100,200
-	  L300,200
-	  M200,200
-	  L200,400"
-	  fill="transparent"
-	  stroke="Black"
-	  stroke-width="10"
-	  /> 
-<text x="200" y="170" text-anchor="middle" font-size="70pt">U</text>
-<text x="160" y="350" text-anchor="end" font-size="70pt">R</text>
-<text x="240" y="350" text-anchor="start" font-size="70pt">I</text>
-</svg>
-
-
-
-
-
-
-
-
-
-// Following are just notes, not doku...
-
-Charge:
-Charge is how much each Object is charged. either positive or negative.
-
-Force:
-$F=k_e\frac{|q_1||q_2|}{r^2}$
-$k_e$ = Coloumbs constant
-$q_1$ = Charge of the first pole
-$q_2$ = Charge of the second pole
-$r$ = distance of the two poles
