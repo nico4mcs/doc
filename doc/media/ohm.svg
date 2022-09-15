@@ -1,0 +1,26 @@
+<svg width="200" height="200" viewbox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+
+<path 
+	  d="
+	  M0,395
+	  L200,0
+	  L400,395
+	  z"
+	  fill="gray"
+	  stroke="Black"
+	  stroke-width="10"
+	  /> 
+<path 
+	  d="
+	  M100,200
+	  L300,200
+	  M200,200
+	  L200,400"
+	  fill="transparent"
+	  stroke="Black"
+	  stroke-width="10"
+	  /> 
+<text x="200" y="170" text-anchor="middle" font-size="70pt">U</text>
+<text x="160" y="350" text-anchor="end" font-size="70pt">R</text>
+<text x="240" y="350" text-anchor="start" font-size="70pt">I</text>
+</svg>
