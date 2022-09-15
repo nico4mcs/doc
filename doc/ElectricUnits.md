@@ -6,15 +6,13 @@ In this chapter, we will take a look at the differences between AC and DC.
 
 DC is constant. This means, that it always flows from + to -. DC is usually used for devices with a battery or TVs
 
-![](./media/DC.jpeg)<br>
-Image 1: DC
+![](./media/DC.jpeg)
 
 ## AC Alternating Current
 
 AC constantly changes its direction. The amount of repetitions (2 direction changes) per second is called Hz e.g. in Switzerland, it is 50Hz, which means it changes the direction 100 times a second. AC is usually used for everything with a motor, like a mixer. But a stove also needs AC power.
 
-![](./media/AC.jpeg)<br>
-Image 2: AC
+![](./media/AC.jpeg)
 
 ### Frequencies
 As said before, Switzerland uses a frequency of 50Hz. Some
@@ -32,19 +30,25 @@ The net time is the time measured by the frequency of the AC power. E.g. ovens u
 ## Units
 In this chapter, the different units of electricity are explained.
 ### Coulomb - Q
-Minus one coulomb is equal to the amount of charge from 6,25 * 10<sup>18</sup> electrons.
-Unit: C
+**Unit: C**
+
+Minus one coulomb is equal to the amount of charge from 6,25 * 10<sup>18</sup> electrons. Minus because a coulomb is positively charged, electrons negatively
 ### Potential Energy - U<sub>E</sub>
 **Unit: J**
-
-**Formulas**
-
-$U_E=k_e\frac{Q_1Q_2}{r}$
-
+<details>
+<summary> <b>Formulas</b> </summary>
+<details>
+<summary>$U_E=k_e\frac{Q_1Q_2}{r}$</summary>
+	
 $k_e$ is called the Coulomb constant. 
 Its value is $8,99\*10^9\frac{N\*m^2}{C^2}$
 
------
+$Q_1$ and $Q_2$ are the charges of two objects.
+
+$r$ is the distance between the two objects
+
+</details>
+</details>
 
 Potential energy is the energy difference of two states.
 
@@ -53,14 +57,13 @@ We have a stair (One Step is 1 m) with a box $F_g=1N$. On the first step, it ha
 
 ![](./media/Stair01.svg)
 
-If you move the cube up one step, it now has a potential energy of 1J ($1J=1N\*1M$)
+If you move the cube up one step, it now has a potential energy of 1J ( $1J=1N\*1M$ )
 
 ![](./media/Stair02.svg)
 
 Now the potential energy is 3J
 
 ![](./media/Stair03.svg)
-![Stair03](https://user-images.githubusercontent.com/81629531/190325910-7ad916fe-09fe-437b-818b-9e3bc3589be5.svg)
 
 ### Voltage - U
 
@@ -85,12 +88,15 @@ If we take two cubes, we have a potential energy of 6J or 3J per cube. And that 
 Using that in electricity, we can use the following formula: $U=\frac{U_E}{Q}$ or with Units: $V=\frac{J}{C}$
 ### Resistance - R
 **Unit: Ω**
+
 Resistance blocks a relative amount of the voltage. This is needed so that the voltage can be regulated and doesn't damage components. It can be compared to a sieve, which slows down the water.
 ### Current - I
 **Unit: A**
+
 Current is the amount of coulomb per second.
 ### Electrical Power - P
 **Unit: W**
+
 Electrical power is the amount of energy per second.
 ## Formulas
 <svg width="200" height="200" viewbox="0 0 400 400">
