@@ -51,9 +51,23 @@ $r$ is the distance between the two objects
 </details>
 
 Potential energy is the energy difference of two states.
+#### Potential Energy - E
+**Unit: J**
+<details>
+<summary> <b>Formulas</b> </summary>
+<details>
+<summary>$E=F*d$</summary>
+	
+$F$ is the force acting on the object. 
 
+$d$ is the distance the object was moved
+
+</details>
+</details>
+
+We first have to understand potential energy so that we can understand electric potential energy. 
 **Example with gravity:**
-We have a stair (One Step is 1 m) with a box $F_g=1N$. On the first step, it has no potential energy.
+In this example we have a stair (One Step is 1 m) with a box $F_g=1N$($F_g$ means weight force). We will take the first step as our first state. As reference, it has a height of 0.
 
 ![](./media/Stair01.svg)
 
@@ -61,21 +75,37 @@ If you move the cube up one step, it now has a potential energy of 1J ( $1J=1N\*
 
 ![](./media/Stair02.svg)
 
-Now the potential energy is 3J
+Now the potential energy is 3J.
 
 ![](./media/Stair03.svg)
+
+#### Electric
+Now that we understand the concept of potential energy we can go to the electric potential energy.
+
+![](./media/circuit.svg)
 
 ### Voltage - U
 
 **Unit: V**
 
-**Formulas**
+<details>
+<summary> <b>Formulas</b> </summary>
+<details>
+<summary>$U=R*I$</summary>
+	
+$R$ is the resistance. 
 
-$U=R*I$
+$I$ is the current.
+</details>
+<details>
+<summary>$U=\frac{U_E}{Q}$ </summary>
+	
+$U_E$ is the electric potential energy
 
-$U=\frac{U_E}{Q}$ 
+$Q$ is the charge.
+</details>
+</details>
 
----
 Voltage is the amount of potential energy per coulomb.
 If we look at the example from before, we see that the cube has a potential energy of 3J
 
@@ -99,7 +129,7 @@ Current is the amount of coulomb per second.
 
 Electrical power is the amount of energy per second.
 ## Formulas
-<svg width="200" height="200" viewbox="0 0 400 400">
+<svg width="200" height="200" viewbox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
 
 <path 
 	  d="
