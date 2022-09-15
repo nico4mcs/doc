@@ -45,7 +45,9 @@ Potential energy is the energy difference of two states.
 
 **Example with gravity:**
 We have a stair (One Step is 1 m) with a box $F_g=1N$. On the first step, it has no potential energy.
-![](./media/Stair01.svg)
+
+![Stair01](https://user-images.githubusercontent.com/81629531/190324153-f3ee4a45-a9f4-4560-88f5-59509da6c900.svg)
+
 If you move the cube up one step, it now has a potential energy of 1J ($1J=1N*1M$)
 <svg width="250" height="250" viewBox="0 0 500 600" xmlns="http://www.w3.org/2000/svg">
 
