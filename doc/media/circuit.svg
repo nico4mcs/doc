@@ -5,6 +5,6 @@
 <path d="M245,50C0 50,0 450,220 450L237.5,450" stroke="gray" fill="transparent"/>
 <path d="M255,50C500 50,500 450,280 450L262.5,450" stroke="gray" fill="transparent"/>
 <text x="250" y="280" text-anchor="middle" font-size="30" fill="blue" font-family="calibri">
-    Difference = Voltage
+    Difference
 </text>
 </svg>
