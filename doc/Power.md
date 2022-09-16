@@ -6,14 +6,14 @@ In this chapter, we will take a look at the differences between AC and DC.
 
 DC is constant. This means, that it always flows from + to -. DC is usually used for devices with a battery or TVs
 
-![](./media/DC.jpeg)
+![](./media/DC.jpeg)<br/>
 Image 1: DC
 
 ## AC Alternating Current
 
 AC constantly changes its direction. The amount of repetitions (2 direction changes) per second is called Hz e.g. in Switzerland, it is 50Hz, which means it changes the direction 100 times a second. AC is usually used for everything with a motor, like a mixer. But also a stove needs AC power.
 
-![](./media/AC.jpeg)
+![](./media/AC.jpeg)<br/>
 Image 2: AC
 
 ### Frequencies
