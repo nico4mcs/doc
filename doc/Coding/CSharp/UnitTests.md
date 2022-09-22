@@ -90,7 +90,7 @@ public void [Funktionsname]_input[Input]_return[ExpectedResult]()
 This is another one:
 
 ```csharp
-public void [Funktionsname]__[Input]_[ExpectedResult]()
+public void [Funktionsname]_[Input]_[ExpectedResult]()
 ```
 
 ### Classes / Project

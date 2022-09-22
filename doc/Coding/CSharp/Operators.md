@@ -45,7 +45,7 @@ The null coalescing is a simplified version of the [ternary conditional](#-Terna
 result = myVar != null ? myVar : "null"
 ```
 
-This is the simplified Version:
+This is the simplified version:
 
 ```csharp
 result = myVar ?? "null"
