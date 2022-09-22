@@ -1,6 +1,6 @@
 # Coding Guidelines
 In this chapter we will have a look at the official [c# coding guidelines](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions) from Microsoft.
-## Naming conventions
+## Naming Conventions
 | Object | Visibility | Naming |
 |--|--|--|
 |classes| any |PascalCase|
@@ -8,23 +8,23 @@ In this chapter we will have a look at the official [c# coding guidelines](https
 |Methods / Functions| any |PascalCase|
 |properties| any |PascalCase|
 |variables| `public`, `protected` |PascalCase|
-|variables| `private`, `internal` |`_`camelcase|
-|variables| `private static`, `internal static` |`s_`camelcase|
-|parameters| - |camelcase|
-## Commenting conventions
-- Comment on a separate line than code
-- begin with an uppercase letter
-- end with a full stop (.)
-- one space between `//` and the text
-- All public members must have a comment (`///`)
+|variables| `private`, `internal` |`_`camelCase|
+|variables| `private static`, `internal static` |`s_`camelCase|
+|parameters| - |camelCase|
+## Commenting Conventions
+- Comment must be on a separate line instead of a line with code.
+- Begin with an uppercase letter.
+- End with a full stop.
+- One space between `//` and the text.
+- All public members must have an XML comment (`///`).
 ### Strings
-- Use string interpolation `$"{var1}, {var2}"`
-### dataTypes
-- use `var` if the type is obvious:
+- Use string interpolation `$"{var1}, {var2}"` (+) //todo
+### Data Types
+- Use `var` if the type is obvious:
 ```csharp
 var var1 = "This is clearly a string.";
-var var1 = new List<...>();
+var var2 = new List<...>();
 //alternative:
 List<...>() var1 = new();
 ```
-- write the type if it is not obvious e.g. return value of a method
+- Write the type if it is not obvious, e.g. return value of a method // tostring todo

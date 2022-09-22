@@ -1,14 +1,15 @@
 # MVVM
-Mvvm or **M**odel **V**iew **V**iew**M**odel means, that we completely separate the view from the logic. To communicate between both, we use the so called ViewModel. 
+MVVM or **M**odel **V**iew **V**iew**M**odel is a software pattern that completely separates the view from the logic. To communicate between both, we use the so called ViewModel. 
 ![](./media/mvvm.svg)
-## MVVM in c# #
+## MVVM in C# #
 Before starting coding you should create a folder structure, the best practice is the following:
 ```
 📁Project
 ┣📁Model
 ┃┗📝Contact.cs
 ┣📁View
-┃┗📝MainWindow.cs
+┃┣📝MainWindow.xaml.cs
+┃┗📝MainWindow.xaml
 ┗📁ViewModel
  ┗📝MainWindowViewModel.cs
 ```
@@ -26,13 +27,13 @@ public class Contact
 ### ViewModel
 The ViewModel is used as a connection between the View and the Model. 
 
-First the ViewModel has to implement the `INotifyPropertyChanged`:
+First, the ViewModel has to implement the `INotifyPropertyChanged` interface:
 ```csharp
 internal class BaseViewModel : INotifyPropertyChanged
 {
 
 	public event PropertyChangedEventHandler? PropertyChanged;
-    }
+}
 ```
 We also need a function to call the event.
 ```csharp
@@ -41,7 +42,7 @@ protected virtual void NotifyPropertyChanged([CallerMemberName] string? property
 	PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
 }
 ```
-`[CallerMemberName]` means, that it automatically gets the `propertyName` from the object it is called. E.g. in the setter.
+`[CallerMemberName]` means that it automatically gets the `propertyName` from the object it is called from. E.g. in the setter.
 
 Now you can add public properties, which you want to include in the UI:
 ```csharp
