@@ -34,7 +34,7 @@ In this chapter, the different units of electricity are explained.
 
 One coulomb is equal to the amount of charge from $6,25\cdot 10^{18}$ elementary charges. One elementary charge is equal to the charge of one proton or to the negative charge of one electron. 
 
-#### Potential Energy in classical mechanics - E
+### Potential Energy in classical mechanics - E
 **Unit: J** - Joule
 
 **Formulas:**
