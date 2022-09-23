@@ -33,23 +33,7 @@ In this chapter, the different units of electricity are explained.
 **Unit: C** - Coulomb
 
 One coulomb is equal to the amount of charge from $6,25\cdot 10^{18}$ elementary charges. One elementary charge is equal to the charge of one proton or to the negative charge of one electron. 
-### Potential Energy - U<sub>E</sub>
-**Unit: J** - Joule
 
-**Formulas:**
-<details>
-<summary>$U_E=k_e\frac{Q_1Q_2}{r}$</summary>
-	
-> $k_e$ is called the Coulomb constant. 
-> Its value is $8,99\cdot 10^9\frac{\text{N}\cdot \text{m}^2}{\text{C}^2}$
-> 
-> $Q_1$ and $Q_2$ are the charges of two objects.
-> 
-> $r$ is the distance between the two objects
-
-</details>
-
-Potential energy is the energy difference of two states.
 #### Potential Energy in classical mechanics - E
 **Unit: J** - Joule
 
@@ -67,7 +51,7 @@ In this example, we have a stair, whose steps are 1m high, with a box with one k
 
 ![](./media/Stair01.svg)
 
-If you move the cube up by one step, it now has a potential energy of 1J($1\text{J}=1\text{N}\cdot 1\text{m}$):
+If you move the cube up by one step, it now has a potential energy of 1J( $1\text{J}=1\text{N}\cdot 1\text{m}$ ):
 
 ![](./media/Stair02.svg)
 
@@ -75,9 +59,27 @@ On the third step the potential energy is 3J:
 
 ![](./media/Stair03.svg)
 
-#### Electric
+### Electric Potential Energy - U<sub>E</sub>
+**Unit: J** - Joule
+
+**Formulas:**
+<details>
+<summary>$U_E=k_e\frac{Q_1Q_2}{r}$</summary>
+	
+> $k_e$ is called the Coulomb constant. 
+> Its value is $8,99\cdot 10^9\frac{\text{N}\cdot \text{m}^2}{\text{C}^2}$
+> 
+> $Q_1$ and $Q_2$ are the charges of two objects.
+> 
+> $r$ is the distance between the two objects
+
+</details>
+
+Potential energy is the energy difference of two states.
+
 Now that we understand the concept of potential energy, we can go to the electric potential energy.
-In the following picture, you can see an LED. In here we have two states, before and after the LED. The concept is exactly the same as in the potential energy:
+In the following picture, you can see an LED. In here we have two states, before and after the LED. The concept is the same as in the mechanical potential energy, we can compare the two states and get the potential energy:
+
 ![](./media/circuit.svg)
 
 ### Voltage - U
@@ -109,9 +111,10 @@ If we take two cubes, we have a potential energy of 6J or 3J per kg. And that is
 
 ![](./media/Stair04.svg)
 
-Using that in electricity, we can substitute kg with C. That gives us the following formula: $U=\frac{U_E}{Q}$ or with Units: $V=\frac{J}{C}$
+Using that in electricity, we can substitute kg with C. That gives us the following formula: $U=\frac{U_E}{Q}$ or with Units: $\text{V}=\frac{\text{J}}{\text{C}}$
 ### Resistance - R
 **Unit: Ω** - Ohm
+
 **Formulas:**
 <details>
 <summary>$R=\frac{U}{I}$</summary>
@@ -124,6 +127,7 @@ Using that in electricity, we can substitute kg with C. That gives us the follow
 Resistance blocks a relative amount of the voltage. This is needed so that the voltage can be regulated and doesn't damage components. It can be compared to a sieve, which slows down the water.
 ### Current - I
 **Unit: A** - Ampere
+
 **Formulas:**
 <details>
 <summary>$I=\frac{U}{R}$</summary>
@@ -136,5 +140,14 @@ Resistance blocks a relative amount of the voltage. This is needed so that the v
 Current is the amount of coulomb per second.
 ### Electrical Power - P
 **Unit: W** - Watt
+
+**Formulas:**
+<details>
+<summary>$P=\frac{U_E}{t}$</summary>
+	
+> $U_E$ is the energy. 
+> 
+> $t$ is the time.
+</details>
 
 Electrical power is the amount of energy per second.
