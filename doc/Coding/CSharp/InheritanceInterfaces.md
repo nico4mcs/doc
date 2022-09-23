@@ -8,7 +8,7 @@ public class Animal
 {
     protected void Eat()
     {
-        //CodeToEat
+        // CodeToEat
     }
 }
 
@@ -21,10 +21,22 @@ public class Dog : Animal
 }
 ```
 You can also override methods of the base class using the `override` declaration. Only `virtual` or `override` methods can be overridden.
-```
+```csharp
+public class Animal
+{
+    public virtual void Eat()
+    {
+        // CodeToEat
+    }
+}
 
-
-
+public class Dog : Animal
+{
+	public override void Eat()
+	{
+		// AnotherCodeToEat
+	}
+}
 ```
 ## Interface
 In an interface, you can define methods which the inheriting class has to implement:
