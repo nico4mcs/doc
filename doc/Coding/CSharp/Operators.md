@@ -1,45 +1,49 @@
 # Operators
+
 Besides the basic operators 
-- +
-- -
+- \+
+- \-
 - /
-- *
+- \*
 - %
+
 there are more complex ones:
 - Ternary conditional
 - Pattern matching
 
-## Ternary conditional
-With the Ternary conditional you can make the following structure a lot shorter:
+## Ternary Conditional
+
+With the ternary conditional you can make the following structure a lot shorter:
 
 ```csharp
 if(myVar == myOtherVar)
 {
-	result = 1
+    result = 1
 }
 else
 {
-	result = 2
+    result = 2
 }
 ```
 
-If you use the ternary conditional it looks like this:
+If you use the ternary conditional, it looks like this:
 
 ```csharp
 result = myVar == myOtherVar ? 1 : 2
 ```
 
-If you want you can also put it on multiple lines:
+If you want, you can also put it on multiple lines:
 
 ```csharp
 result = 
-	myVar == myOtherVar ?
-		1 :
-		2
+    myVar == myOtherVar 
+        ? 1 
+	: 2
 ```
 
-## null-coalescing
-The null coalescing is a simplified version of the [ternary conditional](#-Ternary-conditional). It replaces code like this:
+## Null Coalescing
+
+The null coalescing is a simplified version of the [ternary Conditional](#-Ternary-Conditional). It replaces code like this:
 
 ```csharp
 result = myVar != null ? myVar : "null"
@@ -51,7 +55,7 @@ This is the simplified version:
 result = myVar ?? "null"
 ```
 
-A rather new version of the null-coalescing operator can simplify the following code:
+A rather new version of the null-coalescing operator can simplify the following code. if `myVarm` is `null` it will get the Value `"null"`:
 
 ```csharp
 myVar = myVar ?? "null"
@@ -63,23 +67,24 @@ to
 myVar ??= "null"
 ```
 
-## Pattern matching
+## Pattern Matching
+
 Pattern matching is similar to the [ternary conditional](#-Ternary-conditional) but in this time it replaces a switch statement like the following:
 
 ```csharp
 switch(myVar){
-	case 1:
-		result = "one";
-		break;
-	case 2:
-		result = "two";
-		break;
-	case 3:
-		result = "three";
-		break;
-	default:
-		result = "empty"
-		break;
+    case 1:
+        result = "one";
+	break;
+    case 2:
+	result = "two";
+	break;
+    case 3:
+	result = "three";
+	break;
+    default:
+	result = "empty"
+	break;
 }
 ```
 
@@ -87,10 +92,10 @@ With pattern matching it looks like this:
 
 ```csharp
 result = myVar switch {
-	1 => "one",
-	2 => "two",
-	3 => "three",
-	_ => "empty"
+    1 => "one",
+    2 => "two",
+    3 => "three",
+    _ => "empty"
 }
 ```
 
@@ -98,10 +103,10 @@ Another function is that you can use comparison operators
 
 ```csharp
 result = myVar switch {
-	<1 => "less",
-	1 => "one",
-	2 => "two",
-	3 => "three",
-	>3 => "more"
+    < 1 => "less",
+    1 => "one",
+    2 => "two",
+    3 => "three",
+    > 3 => "more"
 }
 ```
