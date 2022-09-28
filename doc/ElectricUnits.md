@@ -10,11 +10,12 @@ DC is constant. This means, that it always flows from + to -. DC is usually used
 
 ## AC Alternating Current
 
-AC constantly changes its direction. The amount of repetitions (2 direction changes) per second is called Hz e.g. in Switzerland, it is 50Hz, which means it changes the direction 100 times a second. AC is usually used for everything with a motor, like a mixer. But a stove also needs AC power.
+AC constantly changes its direction. The amount of repetitions (2 direction changes) per second is called Hertz (Hz). For example in Switzerland, it is 50Hz, which means it changes the direction 100 times a second. AC is usually used for everything with a motor, like a mixer. But a stove also needs AC power.
 
 ![](./media/AC.jpeg)
 
 ### Frequencies
+
 As said before, Switzerland uses a frequency of 50Hz. Some
 countries e.g. the USA use 60Hz.
 
@@ -24,17 +25,24 @@ A complete list of the different frequencies can be found here:
 
 But what happens if you plug a 50Hz device into a 60Hz plug?
 
-If it is a DC device, it will convert the power, and it does not affect the function of the device. But if it is an AC device, it will run slightly faster. This doesn't have to do anything, but it can overheat and break.
+If it is a DC device, it will convert the power, and it does not affect the function of the device. But if it is an AC device, it will run slightly faster and possibly even overheat and break.
+
 #### Net Time
+
 The net time is the time measured by the frequency of the AC power. E.g. ovens use it in the built-in clock. If the frequency is less than 50Hz, the net time is too slow. If it's more, the net time is too fast. The power distributors constantly try to keep the net time as close as possible to the actual time.
+
 ## Units
+
 In this chapter, the different units of electricity are explained.
+
 ### Charge - Q
+
 **Unit: C** - Coulomb
 
-One coulomb is equal to the amount of charge from $6,25\cdot 10^{18}$ elementary charges. One elementary charge is equal to the charge of one proton or to the negative charge of one electron. 
+One coulomb is equal to $6,25\cdot 10^{18}$ elementary charges. One elementary charge is equal to the charge of one proton or to the negative charge of one electron. 
 
-### Potential Energy in classical mechanics - E
+### Potential Energy In Classical Mechanics - E
+
 **Unit: J** - Joule
 
 **Formulas:**
@@ -47,11 +55,13 @@ One coulomb is equal to the amount of charge from $6,25\cdot 10^{18}$ elementary
 
 </details>
 
-In this example, we have a stair, whose steps are 1m high, with a box with one kg and approximately 1N of weight force. We will take the first step as our first state. As reference, it has a height of 0m:
+The potential energy is the energy difference of two states.
+
+In this example, we have a stair, whose steps are 1m high, with a box of 100g and approximately 1N of weight force. We will take the first step as our first state. As a reference, it has a height of 0m:
 
 ![](./media/Stair01.svg)
 
-If you move the cube up by one step, it now has a potential energy of 1J( $1\text{J}=1\text{N}\cdot 1\text{m}$ ):
+If you move the cube up by one step, it now has a potential energy of 1J ( $1\text{J}=1\text{N}\cdot 1\text{m}$ ):
 
 ![](./media/Stair02.svg)
 
@@ -60,6 +70,7 @@ On the third step the potential energy is 3J:
 ![](./media/Stair03.svg)
 
 ### Electric Potential Energy - U<sub>E</sub>
+
 **Unit: J** - Joule
 
 **Formulas:**
@@ -75,7 +86,7 @@ On the third step the potential energy is 3J:
 
 </details>
 
-Potential energy is the energy difference of two states.
+Like the mechanical potential energy, the electric potential energy is the energy difference of two states.
 
 Now that we understand the concept of potential energy, we can go to the electric potential energy.
 In the following picture, you can see an LED. In here we have two states, before and after the LED. The concept is the same as in the mechanical potential energy, we can compare the two states and get the potential energy:
@@ -107,12 +118,16 @@ If we look at the example from before, we see that the cube has a potential ener
 
 ![](./media/Stair03.svg)
 
-If we take two cubes, we have a potential energy of 6J or 3J per kg. And that is the idea of voltage, Joule per Unit:
+If we take two cubes, we have a potential of 0.6J or 0.3J per kg. We can use this in electricity as voltage, Joule per Coulomb:
 
 ![](./media/Stair04.svg)
 
+Another example would be a dam. The potential energy is the difference of all the water, the potential is the potential energy of 1l.
+
 Using that in electricity, we can substitute kg with C. That gives us the following formula: $U=\frac{U_E}{Q}$ or with Units: $\text{V}=\frac{\text{J}}{\text{C}}$
+
 ### Resistance - R
+
 **Unit: Ω** - Ohm
 
 **Formulas:**
@@ -125,7 +140,9 @@ Using that in electricity, we can substitute kg with C. That gives us the follow
 </details>
 
 Resistance blocks a relative amount of the voltage. This is needed so that the voltage can be regulated and doesn't damage components. It can be compared to a sieve, which slows down the water.
+
 ### Current - I
+
 **Unit: A** - Ampere
 
 **Formulas:**
@@ -138,7 +155,10 @@ Resistance blocks a relative amount of the voltage. This is needed so that the v
 </details>
 
 Current is the amount of coulomb per second.
+You can compare it to the thickness of a pipe. The thicker the pipe, the more water flows.
+
 ### Electrical Power - P
+
 **Unit: W** - Watt
 
 **Formulas:**
@@ -151,3 +171,4 @@ Current is the amount of coulomb per second.
 </details>
 
 Electrical power is the amount of energy per second.
+You can  compare it to the amount of water per second.
