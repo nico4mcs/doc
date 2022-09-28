@@ -1,12 +1,12 @@
 # Unittests
-With unittests you can test a function. The goal of it is to find mistakes in functions e.g. if you try to divide by zero.
+With unittests you can test a function. Its goal is, to find mistakes in functions e.g. if you try to divide by zero.
 
-## Creating a Unittest
+## Creating a Unittest with MSTest
 
 ### 1. Class / Project
-In Visual Studio you can create a Test Project e.g. the following:
+In Visual Studio you can create a Test Project e.g. the MSTest:
 
-![](UnittestClass.png)
+![](./media/UnittestClass.png)
 
 It automatically contains a test class.
 Every class containing at least one test must have the `[TestClass]` attribute.
@@ -48,6 +48,17 @@ In the Assert section, you analyse the results
 
 ## DataRow
 With `DataRow` you can test different parameters with the same function
+```csharp
+[TestMethod]
+[DataRow("ABCDE", 3, "ABC")]
+[DataRow("ABCDE", 5, "ABCDE")]
+public void TruncateStringTest(string testString, int targetLength, string expectedValue)
+{
+    testString = testString.Truncate(targetLength);
+
+    Assert.AreEqual(expectedValue, testString);
+}
+```
 
 ## Calling a test
 If you have opened the Test Explorer (View/Test Explorer) you will see all the Tests. Now you can right-click a test and run it.
