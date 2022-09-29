@@ -1,6 +1,9 @@
 # Inheritance and Interfaces
+
 In this chapter we will have a look at the different kinds of inheritances and interfaces
+
 ## Normal Class
+
 When a normal class inherits another class, it will have access to all properties, variables and methods which are protected or more visible.
 
 ```csharp
@@ -20,7 +23,9 @@ public class Dog : Animal
     }
 }
 ```
+
 You can also override methods of the base class using the `override` declaration. Only `virtual` or `override` methods can be overridden.
+
 ```csharp
 public class Animal
 {
@@ -32,14 +37,17 @@ public class Animal
 
 public class Dog : Animal
 {
-	public override void Eat()
-	{
-		// AnotherCodeToEat
-	}
+    public override void Eat()
+    {
+	// AnotherCodeToEat
+    }
 }
 ```
+
 ## Interface
-In an interface, you can define methods which the inheriting class has to implement:
+
+In an interface, you can define methods which the inheriting class has to implement. You can't instantiate an object of an interface, since the methods and properties are missing. You don't have to write an access modifier since all properties and functions are `public`:
+
 ```csharp
 public interface IAnimal
 {
@@ -54,12 +62,15 @@ public class Dog : IAnimal
 
     public void Eat()
     {
-        //codeToEat
+        // codeToEat
     }
 }
 ```
+
 ## Abstract Class
-In an abstract class, you can add methods and properties just as in a normal class. But you can also use the `abstract` keyword on these. Then, the inheriting class has to implement these using the `override` keyword:
+
+In an abstract class, you can add methods and properties just as in a normal class. But you can also use the `abstract` keyword on these. Then, the inheriting class has to implement these using the `override` keyword. Like the interface you can't instantiate from an abstract class:
+
 ```csharp
 public abstract class Animal
 {
@@ -69,7 +80,7 @@ public abstract class Animal
 
     public void Run()
     {
-        //codeToRun
+        // codeToRun
     }
 }
 
@@ -79,7 +90,7 @@ public class Dog : Animal
 
     public override void Eat()
     {
-        //codeToEat
+        // codeToEat
     }
 }
 ```
