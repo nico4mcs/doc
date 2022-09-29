@@ -8,7 +8,7 @@ public static T[] Combine<T>(T a, T b)
     return new T[] { a, b };
 }
 ```
-The type `T` determines the data type of the properties. This means you can give a variable of any type as parameters and get an array of the same type.
+The type `T` determines the data type of the properties. This means you can give variables of any type as parameters and get an array of the same type.
 ## Classes
 You can also use generics in classes or constructors, e.g:
 ```csharp
