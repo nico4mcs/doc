@@ -51,17 +51,17 @@ One coulomb is equal to $6,25\cdot 10^{18}$ elementary charges. One elementary c
 	
 > $F$ is the force acting on the object. 
 >
-> $d$ is the distance the object was moved
+> $d$ is the distance the object was moved.
 
 </details>
 
 The potential energy is the energy difference of two states.
 
-In this example, we have a stair, whose steps are 1m high, with a box of 100g and approximately 1N of weight force. We will take the first step as our first state. As a reference, it has a height of 0m:
+In this example, we have a stair, whose steps are 1m high, with a box of 100g and approximately 1N of weight force. We will take the first step as our first state. As a reference, it has a height of 0m. Therefore the Box has a potential energy of 0J ( $0\text{J}=1\text{N}\cdot 0\text{m}$ ):
 
 ![](./media/Stair01.svg)
 
-If you move the cube up by one step, it now has a potential energy of 1J ( $1\text{J}=1\text{N}\cdot 1\text{m}$ ):
+If you move the cube up by one step, it now has a potential energy of 1J compared to the reference state:
 
 ![](./media/Stair02.svg)
 
@@ -82,13 +82,13 @@ On the third step the potential energy is 3J:
 > 
 > $Q_1$ and $Q_2$ are the charges of two objects.
 > 
-> $r$ is the distance between the two objects
+> $r$ is the distance between the two objects.
 
 </details>
 
 Like the mechanical potential energy, the electric potential energy is the energy difference of two states.
 
-Now that we understand the concept of potential energy, we can go to the electric potential energy.
+Now that we understand the concept of potential energy in classical mechanics, we can go to the electric potential energy.
 In the following picture, you can see an LED. In here we have two states, before and after the LED. The concept is the same as in the mechanical potential energy, we can compare the two states and get the potential energy:
 
 ![](./media/circuit.svg)
@@ -108,7 +108,7 @@ In the following picture, you can see an LED. In here we have two states, before
 <details>
 <summary>$U=\frac{U_E}{Q}$ </summary>
 	
-> $U_E$ is the electric potential energy
+> $U_E$ is the electric potential energy.
 >
 > $Q$ is the charge.
 </details>
@@ -118,11 +118,11 @@ If we look at the example from before, we see that the cube has a potential ener
 
 ![](./media/Stair03.svg)
 
-If we take two cubes, we have a potential of 0.6J or 0.3J per kg. We can use this in electricity as voltage, Joule per Coulomb:
+If we take two cubes, we have a potential of 6J or 30J per kg. We can compare this voltage, which is Joule per Coulomb:
 
 ![](./media/Stair04.svg)
 
-Another example would be a dam. The potential energy is the difference of all the water, the potential is the potential energy of 1l.
+Another example would be a dam. The potential energy is the difference of all the water, the potential is the potential energy of 1kg.
 
 Using that in electricity, we can substitute kg with C. That gives us the following formula: $U=\frac{U_E}{Q}$ or with Units: $\text{V}=\frac{\text{J}}{\text{C}}$
 
@@ -133,13 +133,13 @@ Using that in electricity, we can substitute kg with C. That gives us the follow
 **Formulas:**
 <details>
 <summary>$R=\frac{U}{I}$</summary>
-	
+
 > $U$ is the voltage. 
 > 
 > $I$ is the current.
 </details>
 
-Resistance blocks a relative amount of the voltage. This is needed so that the voltage can be regulated and doesn't damage components. It can be compared to a sieve, which slows down the water.
+Resistance blocks a relative amount of the voltage. This is needed so that the voltage can be regulated and doesn't damage components. It can be compared to the thickness of a pipe
 
 ### Current - I
 
@@ -154,10 +154,9 @@ Resistance blocks a relative amount of the voltage. This is needed so that the v
 > $R$ is the resistance.
 </details>
 
-Current is the amount of coulomb per second.
-You can compare it to the thickness of a pipe. The thicker the pipe, the more water flows.
+Current is the amount of coulomb per second. You can compare it to the amount of water flowing through a pipe.
 
-### Electrical Power - P
+### Electric Power - P
 
 **Unit: W** - Watt
 
@@ -170,5 +169,4 @@ You can compare it to the thickness of a pipe. The thicker the pipe, the more wa
 > $t$ is the time.
 </details>
 
-Electrical power is the amount of energy per second.
-You can  compare it to the amount of water per second.
+Electrical power is the amount of energy per second. You can compare it to the amount of potential energy of water per second.
