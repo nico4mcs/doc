@@ -118,13 +118,13 @@ If we look at the example from before, we see that the cube has a potential ener
 
 ![](./media/Stair03.svg)
 
-If we take two cubes, we have a potential of 6J or 30J per kg. We can compare this voltage, which is Joule per Coulomb:
+If we take two cubes, we have a potential of 6J or 30J per kg:
 
 ![](./media/Stair04.svg)
 
-Another example would be a dam. The potential energy is the difference of all the water, the potential is the potential energy of 1kg.
-
 Using that in electricity, we can substitute kg with C. That gives us the following formula: $U=\frac{U_E}{Q}$ or with Units: $\text{V}=\frac{\text{J}}{\text{C}}$
+
+Another example would be a dam. The potential energy is the difference of all the water, the potential is the potential energy of 1kg.
 
 ### Resistance - R
 
@@ -139,7 +139,7 @@ Using that in electricity, we can substitute kg with C. That gives us the follow
 > $I$ is the current.
 </details>
 
-Resistance blocks a relative amount of the voltage. This is needed so that the voltage can be regulated and doesn't damage components. It can be compared to the thickness of a pipe
+Resistance blocks a relative amount of the voltage. This is needed so that the voltage can be regulated and doesn't damage components. It can be compared to the thickness of a pipe, the thinner the pipe, the less water flows.
 
 ### Current - I
 
