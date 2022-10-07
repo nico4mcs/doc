@@ -48,6 +48,7 @@ In the Assert section, you analyse the results
 
 ## DataRow
 With `DataRow` you can test different parameters with the same function
+
 ```csharp
 [TestMethod]
 [DataRow("ABCDE", 3, "ABC")]
