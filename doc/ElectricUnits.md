@@ -57,7 +57,7 @@ One coulomb is equal to $6,25\cdot 10^{18}$ elementary charges. One elementary c
 
 The potential energy is the energy difference of two states.
 
-In this example, we have a stair, whose steps are 1m high, with a box of 100g and approximately 1N of weight force. We will take the first step as our first state. As a reference, it has a height of 0m. Therefore the Box has a potential energy of 0J ( $0\text{J}=1\text{N}\cdot 0\text{m}$ ):
+In this example, we have a stair, whose steps are 1m high, with a box of 100g and approximately 1N of weight force. We will take the first step as our first state. As a reference, it has a height of 0m. Therefore, the box has a potential energy of 0J ( $0\text{J}=1\text{N}\cdot 0\text{m}$ ):
 
 ![](./media/Stair01.svg)
 
@@ -118,7 +118,7 @@ If we look at the example from before, we see that the cube has a potential ener
 
 ![](./media/Stair03.svg)
 
-If we take two cubes, we have a potential of 6J or 30J per kg:
+If we take two cubes, we have a potential energy of 6J or a potential of 30J per kg:
 
 ![](./media/Stair04.svg)
 
