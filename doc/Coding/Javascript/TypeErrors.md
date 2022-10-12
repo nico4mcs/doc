@@ -14,7 +14,7 @@ if(!id){
 I thought, that if I parse a string `id = '0'` to a boolean, it becomes false, everything else true. Instead, it was always true, no matter what the `id` was. An empty string on the other hand is parsed to false.
 When I found the mistake, I compared the string `id` to the string `'0'` which worked.
 
-```csharp
+```javascript
 if(id === '0'){
     id = makeId(5);
 }
