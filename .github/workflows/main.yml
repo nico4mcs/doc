@@ -1,7 +1,6 @@
 name: MakePdf
 
 on:
-  commit_comment:
   push:
   release:
     types: [published]
