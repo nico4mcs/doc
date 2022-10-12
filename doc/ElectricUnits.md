@@ -4,13 +4,13 @@ In this chapter, we will take a look at the differences between AC and DC.
 
 ## DC Direct Current
 
-DC is constant. This means, that it always flows from the positive to the negative pole (in physics it is the other way around). DC is usually used for devices with a battery or TVs.
+DC is constant. This means, that charges always flow from the positive (+) to the negative (-) pole. DC is usually used for devices with a battery or TVs.
 
 ![](./media/DC.jpeg)
 
 ## AC Alternating Current
 
-AC constantly changes its direction. The amount of repetitions (2 direction changes) per second is called Hertz (Hz). For example in Switzerland, it is 50Hz, which means it changes the direction 100 times a second. AC is usually used for everything with a motor, like a mixer. But a stove also needs AC power.
+AC constantly changes the flow direction of the charges. The amount of repetitions (2 direction changes) per second is called Hertz (Hz). For example in Switzerland, it is 50Hz, which means it changes the direction 100 times a second. AC is usually used for everything with a motor, like a mixer. But a stove also needs AC power.
 
 ![](./media/AC.jpeg)
 
