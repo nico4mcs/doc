@@ -4,7 +4,7 @@ In this chapter, we will take a look at the differences between AC and DC.
 
 ## DC Direct Current
 
-DC is constant. This means, that it always flows from the positive to the negative pole. DC is usually used for devices with a battery or TVs.
+DC is constant. This means, that it always flows from the positive to the negative pole (in physics it is the other way around). DC is usually used for devices with a battery or TVs.
 
 ![](./media/DC.jpeg)
 
