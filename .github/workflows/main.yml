@@ -12,11 +12,17 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Publish PDF Document
-        uses: shrink/actions-document-publish@v1
-        id: publish-document
+      - name: Pandoc generator
+        # You may pin to the exact commit or the version.
+        # uses: Lothindir/pandoc-markdown-action@1e01a76fcea870a4273ad98f9a86fc4bfd1af020
+        uses: Lothindir/pandoc-markdown-action@v0.4
         with:
-          sources: 'doc/**/*'
+          # Source markdown file
+          markdown: doc/pandoc.md
+          # Output pdf file name
+          pdf: document.pdf
+          # Choice of template(s) for listings and/or code highlights
+          # template: # optional, default is none
       - name: Upload Document
         uses: actions/upload-artifact@v2
         id: upload-document
