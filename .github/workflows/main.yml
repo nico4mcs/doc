@@ -43,7 +43,7 @@ jobs:
       - name: move Images
         run: |
           mkdir out/media
-          mv bin/media out/media
+          mv bin/media/* out/media
       - name: Markdown to PDF and HTML
         uses: docker://pandoc/core:2.9
         with:
