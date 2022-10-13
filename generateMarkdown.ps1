@@ -41,5 +41,4 @@ copyMedia(".jpg")
 copyMedia(".png")
 
 $FinalFile = $FinalFile.TrimEnd("---`n`n")
-$null = $FinalFile | New-Item bin\FinalFile.md -Force
-#$null makes last command silent
+Write-Host $FinalFile
