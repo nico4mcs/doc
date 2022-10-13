@@ -78,4 +78,4 @@ jobs:
         id: upload-document
         with:
           name: 'document.pdf'
-          path: ${{ github.workspace }}/out/*.pdf
+          path: ./out/doc.pdf
