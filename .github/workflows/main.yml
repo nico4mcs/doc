@@ -20,3 +20,7 @@ jobs:
         run: |
           mkdir -p ${{ github.workspace }}/artifact
           .\generateMarkdown.ps1 > ${{ github.workspace }}/artifact/world.md
+      - uses: actions/upload-artifact@v3
+        with:
+          name: ${{ env.name }}-name
+          path: ${{ github.workspace }}/artifact/**/*
