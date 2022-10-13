@@ -45,17 +45,9 @@ jobs:
           ls ./bin/
           pwd
       - name: Markdown to PDF and HTML
-        # You may pin to the exact commit or the version.
-        # uses: BaileyJM02/markdown-to-pdf@1be26775add5f94fb55d4a2ce36ff7cad23b8dd0
-        uses: BaileyJM02/markdown-to-pdf@v1
+        uses: docker://pandoc/core:2.9
         with:
-          input_dir: bin
-          output_dir: out
-          images_dir: bin/media
-          # for example <img src="./images/file-name.png">
-          image_import: ./media
-          # Default is true, can set to false to only get PDF files
-          build_html: false
+          args: "-o out/doc.pdf bin/doc.md"
       - uses: actions/upload-artifact@v1
         with:
           name: docs
