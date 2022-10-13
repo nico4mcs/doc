@@ -73,9 +73,13 @@ jobs:
           # template: # optional
           # (Boolean) Whether a table of contents should be generated
           table_of_contents: true # optional
+      - name: create Folder
+        run: |
+          ls ./out/
+          pwd
       - name: Upload Document
         uses: actions/upload-artifact@v2
         id: upload-document
         with:
           name: 'document.pdf'
-          path: ./out/doc.pdf
+          path: ./out/
