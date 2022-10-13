@@ -50,13 +50,13 @@ jobs:
         uses: BaileyJM02/markdown-to-pdf@v1
         with:
           # (Path) or (File) The location of the folder containing your .md or .markdown files, or a path to a single .md or .markdown file that you would like to convert.
-          input_path: ./bin/doc.md # optional
+          input_path: bin # optional
           # (Path) The location of the folder containing your .md or .markdown files
           # input_dir: # optional
           # (Path) The location of the folder containing your images, this should be the route of all images
-          images_dir: ./bin/media # optional
+          images_dir: bin/media # optional
           # (String) The path you use to import your images that can be replaced with the server URL
-          # image_import: # optional
+          image_import: ./media # optional
           # (Path) The location of the folder you want to place the built files
           output_dir: ./out # optional
           # (Boolean) Whether to also create a .html file
@@ -81,5 +81,5 @@ jobs:
         uses: actions/upload-artifact@v2
         id: upload-document
         with:
-          name: 'document.pdf'
-          path: ./out/
+          name: 'docs'
+          path: out
