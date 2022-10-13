@@ -45,12 +45,12 @@ jobs:
         uses: mkrakowitzer/actions-makepdfs@v1.3
         with:
           # Location of markdown files in github repository
-          markdown_dir: ${{ github.workspace }}/bin/doc.md # default is doc
+          markdown_dir: ${{ github.workspace }}/bin/ # default is doc
           # Location to output PDF files to
-          output_dir: ${{ github.workspace }}/bin/doc.pdf # default is tmp
+          output_dir: ${{ github.workspace }}/bin/ # default is tmp
       - name: Upload Document
         uses: actions/upload-artifact@v2
         id: upload-document
         with:
           name: 'document.pdf'
-          path: ${{ github.workspace }}/bin/doc.pdf
+          path: ${{ github.workspace }}/bin/*.pdf
