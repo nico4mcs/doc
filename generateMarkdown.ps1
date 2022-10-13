@@ -41,4 +41,4 @@ copyMedia(".jpg")
 copyMedia(".png")
 
 $FinalFile = $FinalFile.TrimEnd("---`n`n")
-Write-Host $FinalFile
+Write-Output $FinalFile
