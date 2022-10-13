@@ -40,10 +40,10 @@ jobs:
         with:
           path: ./bin/
           name: mdFile
-      - name: create Folder
+      - name: move Images
         run: |
-          ls ./bin/
-          pwd
+          mkdir out/media
+          mv bin/media out/media
       - name: Markdown to PDF and HTML
         uses: docker://pandoc/core:2.9
         with:
