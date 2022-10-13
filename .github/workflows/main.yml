@@ -10,7 +10,7 @@ env:
 
 jobs:
   publish-and-release:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     name: Publish Document to Release
     steps:
       - name: Publish PDF Document
