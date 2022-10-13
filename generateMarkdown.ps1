@@ -35,6 +35,9 @@ function copyMedia([String]$extension){
     Copy-Item -Destination bin\media\
 }
 
+if(!Test-Path .\bin){mkdir .\bin}
+if(!Test-Path .\bin\media){mkdir .\bin\media}
+
 copyMedia(".svg")
 copyMedia(".jpeg")
 copyMedia(".jpg")
