@@ -33,11 +33,11 @@ jobs:
     steps:
       - name: create Folder
         run: |
-          mkdir ./bin
+          mkdir ${{ github.workspace }}/bin
       - name: Download artifact
         uses: actions/download-artifact@v3
         with:
-          path: ./bin/
+          path: ${{ github.workspace }}/bin/
           name: mdFile
       - name: Create PDF
         # You may pin to the exact commit or the version.
