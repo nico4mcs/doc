@@ -26,3 +26,25 @@ jobs:
         with:
           name: mdFile
           path: ${{ github.workspace }}/artifact/
+  pdf:
+    runs-on: ubuntu-latest
+    name: Publish PDF
+    steps:
+      - name: create Folder
+        run: |
+          mkdir ./bin
+      - name: Download artifact
+        uses: actions/download-artifact@v3
+        with:
+          path: ./bin/
+      - name: Publish PDF Document
+        uses: shrink/actions-document-publish@v1
+        id: publish-document
+        with:
+          sources: 'bin/*'
+      - name: Upload Document
+        uses: actions/upload-artifact@v2
+        id: upload-document
+        with:
+          name: 'document.pdf'
+          path: ${{ steps.publish-document.outputs.pdf }}
