@@ -9,12 +9,20 @@ env:
   GITHUB_TOKEN: ${{ github.token }}
 
 jobs:
-  publish-and-release:
+  publish:
     runs-on: ubuntu-latest
-    name: Publish Document to Release
+    name: Publish Document
     steps:
+      - name: Checkout
+        uses: actions/checkout@v2
       - name: Publish PDF Document
         uses: shrink/actions-document-publish@v1
         id: publish-document
         with:
-          sources: 'doc/pandoc.md'
+          sources: 'doc/**'
+      - name: Upload Document
+        uses: actions/upload-artifact@v2
+        id: upload-document
+        with:
+          name: 'document.pdf'
+          path: ${{ steps.publish-document.outputs.pdf }}
