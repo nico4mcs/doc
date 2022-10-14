@@ -1,0 +1,20 @@
+<svg width="250" height="250" viewBox="0 0 520 600" xmlns="http://www.w3.org/2000/svg">
+
+<path d="
+	  M000,600
+	  L000,500
+	  L100,500
+	  L100,400
+	  L200,400
+	  L200,300
+	  L300,300
+	  L300,200
+	  L420,200
+	  L420,100
+	  L520,100
+	  L520,600"
+	  fill="gray"/>
+<rect  width="60" height="60" x="300" y="140" fill="blue" />
+<rect  width="60" height="60" x="360" y="140" fill="red" />
+<rect  width="60" height="60" x="20" y="440" fill="transparent" stroke="red" stroke-width="5" stroke-dasharray="12,10"/>
+</svg>
