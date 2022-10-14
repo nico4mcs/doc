@@ -1,13 +1,6 @@
 # Operators
 
-Besides the basic operators 
-- \+
-- \-
-- /
-- \*
-- %
-
-there are more complex ones:
+Besides the basic operators (+, -, %...), there are more complex ones:
 - Ternary conditional
 - Pattern matching
 
