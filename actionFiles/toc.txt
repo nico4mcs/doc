@@ -3,7 +3,7 @@ Doc
  ElectricUnits.md
  C#
   Coding\CSharp\Generics.md
-  Coding\CSharp\MVVM.md
+  Coding\CSharp\MVM.md
   Coding\CSharp\UnitTests.md
  Git
   Coding\Git\GitLfs.md
