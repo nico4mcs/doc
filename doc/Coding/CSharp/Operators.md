@@ -2,6 +2,7 @@
 
 Besides the basic operators (+, -, %...), there are more complex ones:
 - Ternary conditional
+- Null Coalescing
 - Pattern matching
 
 ## Ternary Conditional
