@@ -119,7 +119,7 @@ You can also bind commands to objects like a button. First we have to write the 
 ```csharp
 private void SaveExecute(object? _)
 {
-    // I'm Executed, when the Button is pressed.
+    // I'm executed, when the button is pressed.
 }
 
 private bool SaveCanExecute(object? _)
