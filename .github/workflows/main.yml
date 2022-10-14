@@ -1,9 +1,10 @@
 name: MakePdf
 
 on:
+  
   push:
-  release:
-    types: [published]
+    tags:
+      - '**generate**'
 
 env:
   GITHUB_TOKEN: ${{ github.token }}
