@@ -1,10 +1,7 @@
 name: MakePdf
 
-on:
-  push:
-    tags:
-      - '*generate*'
-
+on: workflow_dispatch
+  
 env:
   GITHUB_TOKEN: ${{ github.token }}
 
