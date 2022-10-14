@@ -1,7 +1,6 @@
 name: MakePdf
 
 on:
-  
   push:
     tags:
       - '**generate**'
