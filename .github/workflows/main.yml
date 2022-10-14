@@ -47,7 +47,7 @@ jobs:
       - name: Markdown to PDF and HTML
         uses: docker://pandoc/core:2.9
         with:
-          args: "-o out/doc.html bin/doc.md"
+          args: "--css=styling.css -o out/doc.html bin/doc.md"
       - uses: actions/upload-artifact@v1
         with:
           name: docs
