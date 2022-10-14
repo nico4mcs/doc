@@ -7,6 +7,7 @@ MVVM or **M**odel **V**iew **V**iew**M**odel is a software pattern that complete
 ## MVVM in C# #
 
 Before starting coding you should create a folder structure. The best practice is the following:
+
 ```
 📁Project
 ┣📁Model
@@ -17,9 +18,11 @@ Before starting coding you should create a folder structure. The best practice i
 ┗📁ViewModel
  ┗📝MainWindowViewModel.cs
 ```
+
 ### Model
 
 Let's first take a look at the model. In the model you put all the data and logic. E.g. a contact:
+
 ```csharp
 public class Contact
 {
@@ -51,6 +54,7 @@ protected virtual void NotifyPropertyChanged([CallerMemberName] string? property
     PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
 }
 ```
+
 `[CallerMemberName]` means that it automatically gets the `propertyName` from the object it is called from. E.g. in the setter. If you call the method, it allerts the view, that the property has changed.
 
 Now you can add public properties, which you want to include in the UI:
