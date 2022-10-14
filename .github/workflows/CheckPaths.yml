@@ -1,0 +1,19 @@
+name: CheckPaths
+
+on: 
+  push:
+
+env:
+  GITHUB_TOKEN: ${{ github.token }}
+
+jobs:
+  CheckPaths:
+    runs-on: windows-latest
+    name: Generate Markdown
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: check paths
+        shell: pwsh
+        run: |
+          .\actionFiles\checkPaths.ps1
