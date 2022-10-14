@@ -3,7 +3,7 @@ name: MakePdf
 on:
   push:
     tags:
-      - '**generate**'
+      - '*generate*'
 
 env:
   GITHUB_TOKEN: ${{ github.token }}
