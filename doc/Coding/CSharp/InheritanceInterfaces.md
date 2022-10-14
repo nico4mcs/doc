@@ -1,6 +1,6 @@
 # Inheritance and Interfaces
 
-In this chapter we will have a look at the different kinds of inheritances and interfaces
+In this chapter we will have a look at the different kinds of inheritances and interfaces.
 
 ## Normal Class
 
