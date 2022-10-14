@@ -1,6 +1,15 @@
 name: MakePdf
 
-on: workflow_dispatch
+on: 
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+    inputs:
+      environment:
+        type: string
+        default: main
+        required: true
   
 env:
   GITHUB_TOKEN: ${{ github.token }}
