@@ -9,9 +9,9 @@ env:
   GITHUB_TOKEN: ${{ github.token }}
 
 jobs:
-  markdown:
+  GenerateMarkdown:
     runs-on: windows-latest
-    name: Generate Document
+    name: Generate Markdown
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -24,12 +24,12 @@ jobs:
           mv .\bin\media\* ${{ github.workspace }}/artifact/media
       - uses: actions/upload-artifact@v3
         with:
-          name: mdFile
+          name: mdFiles
           path: ${{ github.workspace }}/artifact/
-  pdf:
+  GenerateHtml:
     runs-on: ubuntu-latest
-    name: Publish PDF
-    needs: markdown
+    name: Generate HTML
+    needs: GenerateMarkdown
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -37,6 +37,8 @@ jobs:
         run: |
           mkdir ./bin
           mkdir ./out
+      - name: move CSS
+        run: |
           cp styling.css out/
       - name: Download artifact
         uses: actions/download-artifact@v3
@@ -47,11 +49,11 @@ jobs:
         run: |
           mkdir out/media
           mv bin/media/* out/media
-      - name: Markdown to PDF and HTML
+      - name: Markdown to HTML
         uses: docker://pandoc/core:2.9
         with:
           args: "--standalone --css=styling.css -o out/doc.html bin/doc.md"
       - uses: actions/upload-artifact@v1
         with:
-          name: docs
+          name: htmlFiles
           path: out
