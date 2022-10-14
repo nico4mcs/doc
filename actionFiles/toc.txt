@@ -1,7 +1,9 @@
 Doc
  Pandoc.md
- Power.md
+ ElectricUnits.md
  C#
   Coding\CSharp\Generics.md
   Coding\CSharp\MVVM.md
-   
+  Coding\CSharp\UnitTests.md
+ Git
+  Coding\Git\GitLfs.md
