@@ -9,7 +9,7 @@ env:
 jobs:
   CheckPaths:
     runs-on: windows-latest
-    name: Generate Markdown
+    name: Check Paths
     steps:
       - name: Checkout
         uses: actions/checkout@v2
