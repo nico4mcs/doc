@@ -20,8 +20,8 @@ jobs:
         run: |
           mkdir -p ${{ github.workspace }}/artifact
           mkdir -p ${{ github.workspace }}/artifact/media/
-          .\generateMarkdown.ps1 > ${{ github.workspace }}/artifact/doc.md
-          mv .\bin\media\* ${{ github.workspace }}/artifact/media
+          .\actionFiles\generateMarkdown.ps1 > ${{ github.workspace }}/artifact/doc.md
+          mv .\actionFiles\bin\media\* ${{ github.workspace }}/artifact/media
       - uses: actions/upload-artifact@v3
         with:
           name: mdFiles
@@ -39,7 +39,7 @@ jobs:
           mkdir ./out
       - name: move CSS
         run: |
-          cp styling.css out/
+          cp actionFiles/styling.css out/
       - name: Download artifact
         uses: actions/download-artifact@v3
         with:
