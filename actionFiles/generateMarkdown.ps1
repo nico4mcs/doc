@@ -1,4 +1,4 @@
-[String[]]$toc = Get-Content toc.txt
+[String[]]$toc = Get-Content .\toc.txt
 
 $FinalFile = ""
 $folder = "doc/"
