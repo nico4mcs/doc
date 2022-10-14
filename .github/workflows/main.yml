@@ -44,7 +44,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           path: ./bin/
-          name: mdFile
+          name: mdFiles
       - name: move Images
         run: |
           mkdir out/media
