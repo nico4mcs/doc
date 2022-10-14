@@ -35,8 +35,7 @@ jobs:
         run: |
           mkdir ./bin
           mkdir ./out
-          ls .
-          ls ${{ github.workspace }}
+          echo ${{ github.workspace }}
       - name: Download artifact
         uses: actions/download-artifact@v3
         with:
