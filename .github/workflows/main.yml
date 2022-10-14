@@ -37,11 +37,7 @@ jobs:
         run: |
           mkdir ./bin
           mkdir ./out
-          echo ${{ github.workspace }}
-          ls ${{ github.workspace }}
-          pwd
-          ls
-          
+          cp styling.css out/
       - name: Download artifact
         uses: actions/download-artifact@v3
         with:
@@ -54,7 +50,7 @@ jobs:
       - name: Markdown to PDF and HTML
         uses: docker://pandoc/core:2.9
         with:
-          args: "--css=styling.css -o out/doc.html bin/doc.md"
+          args: "--standalone --css=styling.css -o out/doc.html bin/doc.md"
       - uses: actions/upload-artifact@v1
         with:
           name: docs
