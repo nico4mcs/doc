@@ -30,7 +30,7 @@ In this chapter we will have a look at the official [C# coding guidelines](https
 ## Data Types
 
 - Use `var` if the type is obvious:
-- 
+
 ```csharp
 var var1 = "This is clearly a string.";
 var var2 = new List<...>();
