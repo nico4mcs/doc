@@ -31,7 +31,7 @@ foreach($line in $toc){
 }
 
 function copyMedia([String]$extension){
-    Get-ChildItem */media/*$extension -Recurse |
+    Get-ChildItem doc/*$extension -Recurse |
     Copy-Item -Destination bin\media\
 }
 
