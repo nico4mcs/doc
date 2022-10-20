@@ -8,9 +8,6 @@ on:
       - checkPaths
     types: 
       - completed
-  push:
-    branches:
-      - main
   workflow_dispatch:
   
 env:
