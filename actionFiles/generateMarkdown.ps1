@@ -42,6 +42,7 @@ copyMedia(".svg")
 copyMedia(".jpeg")
 copyMedia(".jpg")
 copyMedia(".png")
+copyMedia(".gif")
 
 $FinalFile = $FinalFile.TrimEnd("---`n`n")
 Write-Output $FinalFile
