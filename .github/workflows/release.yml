@@ -1,4 +1,4 @@
-name: "tagged-release"
+name: "release"
 
 on:
   workflow_dispatch:
@@ -43,7 +43,7 @@ jobs:
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           automatic_release_tag: "latest"
-          prerelease: true
+          prerelease: false
           title: "doc"
           files: |
             *
