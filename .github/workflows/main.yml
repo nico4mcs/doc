@@ -1,6 +1,13 @@
 name: GenerateDocs
 
 on: 
+  workflow_run:
+    branches: 
+      - main
+    workflows: 
+      - checkPaths
+    types: 
+      - completed
   push:
     branches:
       - main
@@ -11,6 +18,7 @@ env:
 
 jobs:
   GenerateMarkdown:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: windows-latest
     name: Generate Markdown
     steps:
