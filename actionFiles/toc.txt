@@ -6,4 +6,4 @@ Doc
   Coding\CSharp\MVVM.md
   Coding\CSharp\UnitTests.md
  Git
-  Coding\Git\Gitfs.md
+  Coding\Git\GitLfs.md
