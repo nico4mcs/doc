@@ -58,7 +58,7 @@ jobs:
       - name: Markdown to HTML
         uses: docker://pandoc/core:2.9
         with:
-          args: "--standalone --css=styling.css -o out/doc.html bin/doc.md"
+          args: "--standalone --webtex --css=styling.css -o out/doc.html bin/doc.md"
       - uses: actions/upload-artifact@v1
         with:
           name: htmlFiles
