@@ -1,5 +1,20 @@
 # Operators
 
+There are many different operators besides the basic ones:
+- \+
+- \-
+- \*
+- /
+- %
+
+Some are just rarely used on the other hand there are some very powerfull functions.
+
+## Mathematical operators
+|Operator|Function|
+|-|-|
+|+| addition|
+
+
 Besides the basic operators (+, -, %...), there are more complex ones:
 - Ternary conditional
 - Null Coalescing
