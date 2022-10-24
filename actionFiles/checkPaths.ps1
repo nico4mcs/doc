@@ -24,7 +24,7 @@ $images = Get-ChildItem doc/* -Recurse -Include *.gif, *.svg, *.jpeg, *.jpg, *.p
 
 $a=$images.name
 
-$b=$a | select –unique
+$b=$a.ToLower | select –unique
 
 
 if($a.Length -ne $b.Length){
