@@ -1,6 +1,6 @@
 [![CheckPaths](https://github.com/nico4mcs/doc/actions/workflows/checkPaths.yml/badge.svg?branch=main)](https://github.com/nico4mcs/doc/actions/workflows/checkPaths.yml)
 [![GenerateDocs](https://github.com/nico4mcs/doc/actions/workflows/generateDocs.yml/badge.svg?branch=main)](https://github.com/nico4mcs/doc/actions/workflows/generateDocs.yml)
-[![release](https://github.com/nico4mcs/doc/actions/workflows/releaseDocs.yml/badge.svg?branch=main)](https://github.com/nico4mcs/doc/actions/workflows/releaseDocs.yml)
+[![ReleaseDocs](https://github.com/nico4mcs/doc/actions/workflows/releaseDocs.yml/badge.svg?branch=main)](https://github.com/nico4mcs/doc/actions/workflows/releaseDocs.yml)
 
 # Introduction
 
