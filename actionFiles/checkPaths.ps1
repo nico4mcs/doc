@@ -22,7 +22,7 @@ foreach($line in $toc){
 
 $images = Get-ChildItem doc/* -Recurse -Include *.gif, *.svg, *.jpeg, *.jpg, *.png
 
-$a=($images.name).ToLower
+$a=$images.name.toLower()
 
 $b=$a | select –unique
 
