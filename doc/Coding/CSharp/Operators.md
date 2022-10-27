@@ -49,8 +49,11 @@ Some are just not that useful on the other hand there are some very powerful fun
 ## Bit operators
 
 Bitwise operators convert integers or chars to bits and convert them:
+
+```-
 2 => 10
 13 => 1101
+```
 
 | Operator          | Function                                | usage / true                 |
 | ----------------- | --------------------------------------- | ---------------------------- |
