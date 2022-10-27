@@ -30,6 +30,10 @@ This Repo contains my Lerndokumentation.
 ┗📄 README.md
 ```
 
+created with [FolderStructureTxt](https://github.com/nico4mcs/FolderStructureTxt)
+
+---
+
 ## Workflows
 
 ### CheckPaths
@@ -70,4 +74,4 @@ Header1
   Path\To\File3.md
 ```
 
-[GenerateDocs](#generatedocs) will parse the file and edit the specified Files, so that e.g. in `Path\To\File.md` every Header1 becomes a Header2.
+[GenerateDocs](#generatedocs) will parse the file using the spaces on the left and edit the specified Files, so that e.g. in `Path\To\File.md` every Header1 becomes a Header2.
