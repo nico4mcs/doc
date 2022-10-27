@@ -10,6 +10,7 @@ Doc
   Coding\CSharp\UnitTests.md
  Git
   Coding\Git\GitLfs.md
+  Coding\Git\GitHubPipelines.md
  JavaScript
   Coding\Javascript\JavascriptAndCsharp.md
   Coding\Javascript\TypeErrors.md
