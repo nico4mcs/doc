@@ -1,7 +1,7 @@
 Doc
  Pandoc.md
  ElectricUnits.md
- C#
+ C# #
   Coding\CSharp\CodingGuidelines.md
   Coding\CSharp\Generics.md
   Coding\CSharp\InheritanceInterfaces.md
