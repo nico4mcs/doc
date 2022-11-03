@@ -15,7 +15,7 @@ env:
 
 jobs:
   GenerateMarkdown:
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    if: ${{ (github.event.workflow_run.conclusion == 'success') || (github.event.workflow_run == '') }}
     runs-on: windows-latest
     name: Generate Markdown
     steps:
