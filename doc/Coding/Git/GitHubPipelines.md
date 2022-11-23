@@ -4,7 +4,7 @@ With GitHub Pipelines (also called Actions or Workflows) you can automate simple
 
 ## Writing A Pipeline
 
-The following code snippet contains a basic skeleton for a Pipeline:
+The following code snippet contains a basic structure for a Pipeline. It consists of a name, trigger conditions, variables and jobs:
 
 ```yml
 name: GenerateDocs
@@ -19,7 +19,7 @@ on:
   
 env:
   GITHUB_TOKEN: ${{ github.token }}
-# The Environment / Repo thins are checked out from.
+# The Environment / Repo Files are checked out from.
 
 jobs:
   Job1:
@@ -28,7 +28,7 @@ jobs:
     ...
 ```
 
-Writing a basic job, which executes a PowerShell script:
+A job has two names, steps which are executed and an OS they are executed on. In the step you can write further informations like again a name and in this example the shell and the executed command. This Example executes a powershell script
 
 ```yml
 GenerateMarkdown:
@@ -45,6 +45,51 @@ GenerateMarkdown:
             run: |
             .\actionFiles\generateMarkdown.ps1
             # Commands executed.
+```
+
+In the chapter [Commonly Used Actions](#-Commonly-Used-Actions) you can find more examples for useful steps.
+
+### Triggers And Dependencies
+
+#### Run A Job After Another
+
+If you add the following code to the job, it will only execute if the job `StepBefore` was executed:
+
+```yml
+needs: StepBefore
+```
+
+#### Run A Workflow After Another
+
+There is no good-looking solution for this but you can use these two code snippets as a workaround:
+
+```yml
+on:
+  workflow_run:
+  # When a workflow is run
+    branches: 
+      - main
+    # Branch of the Workflow
+    workflows: 
+      - checkPaths
+    # Name of the Workflow
+    types: 
+      - completed
+      # Only if it has been completed (!= succeeded)
+```
+
+```yml
+if: ${{ github.event.workflow_run.conclusion == 'success' }}
+# Added to a job. Is only executed when it was a success.
+```
+
+#### Running a Workflow Manually
+
+With the following Code snippet, you can run the pipeline manually from the `Actions` menu in GitHub:
+
+```yml
+on:
+  workflow_dispatch:
 ```
 
 ## Commonly Used Actions
@@ -122,47 +167,4 @@ GenerateMarkdown:
         title: "doc"
         files: |
             *
-```
-
-## Triggers And Dependencies
-
-### Run A Job After Another
-
-Add the following code to the job.
-
-```yml
-needs: StepBefore
-```
-
-### Run A Workflow After Another
-
-There is no good-looking solution for this but you can use these two code snippets as a workaround:
-
-```yml
-on:
-  workflow_run:
-  # When a workflow is run
-    branches: 
-      - main
-    # Branch of the Workflow
-    workflows: 
-      - checkPaths
-    # Name of the Workflow
-    types: 
-      - completed
-      # Only if it has been completed (!= succeeded)
-```
-
-```yml
-if: ${{ github.event.workflow_run.conclusion == 'success' }}
-# Added to a job. Is only executed when it was a success.
-```
-
-### Running a Workflow Manually
-
-With the following Code snippet, you can run the pipeline manually from the `Actions` menu in GitHub.
-
-```yml
-on:
-  workflow_dispatch:
 ```
