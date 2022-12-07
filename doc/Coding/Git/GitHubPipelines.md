@@ -19,7 +19,7 @@ on:
   
 env:
   GITHUB_TOKEN: ${{ github.token }}
-# The Environment / Repo Files are checked out from.
+# The environment / repo files are checked out from.
 
 jobs:
   Job1:
@@ -28,7 +28,7 @@ jobs:
     ...
 ```
 
-A job has two names, steps which are executed and an OS they are executed on. In the step you can write further informations like again a name and in this example the shell and the executed command. This Example executes a powershell script
+A job has two names, steps which are executed and an OS they are executed on. In the step you can write further information like again a name and in this example the shell and the executed command. This example executes a powershell script
 
 ```yml
 GenerateMarkdown:
