@@ -1,7 +1,7 @@
 Doc
  Pandoc.md
  ElectricUnits.md
- C#
+ C# #
   Coding\CSharp\CodingGuidelines.md
   Coding\CSharp\Generics.md
   Coding\CSharp\InheritanceInterfaces.md
@@ -10,6 +10,7 @@ Doc
   Coding\CSharp\UnitTests.md
  Git
   Coding\Git\GitLfs.md
+  Coding\Git\GitHubPipelines.md
  JavaScript
   Coding\Javascript\JavascriptAndCsharp.md
   Coding\Javascript\TypeErrors.md
