@@ -6,40 +6,40 @@ In this chapter you can find almost all the operators available in c#.
 
 | Operator | Function                                | Comment                |
 | -------- | --------------------------------------- | ---------------------- |
-| +        | addition                                | `1 + 2 = 3`            |
-| -        | subtraction                             | `3 - 2 = 1`            |
-| *        | multiplication                          | `3 * 2 = 6`            |
-| /        | division                                | `6 / 2 = 3, 5 / 2 = 2` |
-| %        | remainder                               | `5 % 3 = 2`            |
-| x++      | increases x by 1 after executing line   |                        |
-| ++x      | increases x by 1 before executing line  |                        |
-| x--      | decreases x by 1 after executing line   |                        |
-| --x      | decreases x by 1 before executing line  |                        |
+| +        | Addition                                | `1 + 2 = 3`            |
+| -        | Subtraction                             | `3 - 2 = 1`            |
+| *        | Multiplication                          | `3 * 2 = 6`            |
+| /        | Division                                | `6 / 2 = 3, 5 / 2 = 2` |
+| %        | Remainder                               | `5 % 3 = 2`            |
+| x++      | Increases x by 1 after executing line   |                        |
+| ++x      | Increases x by 1 before executing line  |                        |
+| x--      | Decreases x by 1 after executing line   |                        |
+| --x      | Decreases x by 1 before executing line  |                        |
 | op=      | `x op= y` is equivalent to `x = x op y` | `x += 1` = `x = x + 1` |
-| d        | converts to double                      | `5d = (double)5`       |
-| f        | converts to float                       | `5f = (float)5`        |
-| m        | converts to decimal                     | `5m = (decimal)5`      |
+| d        | Converts to double                      | `5d = (double)5`       |
+| f        | Converts to float                       | `5f = (float)5`        |
+| m        | Converts to decimal                     | `5m = (decimal)5`      |
 
 ## Boolean operators
 
 | Operator | Function                                                          | Comment                        |
 | -------- | ----------------------------------------------------------------- | ------------------------------ |
-| ==       | equals                                                            | `1 == 1`                       |
-| !=       | not equal                                                         | `1 != 2`                       |
-| <        | less                                                              | `1 < 2`                        |
-| <=       | less or equal                                                     | `1 <= 2`                       |
-| >        | greater                                                           | `1 > 2`                        |
-| >=       | greater or equal                                                  | `1 >= 2`                       |
-| is       | is object of given type                                           | `5 is int`                     |
-| &        | logical and                                                       | `true & true`                  |
-| \|       | logical  or                                                       | `true \| false` `true \| true` |
-| &&       | conditional and, [conditional operators](#-Conditional-Operators) | `func1() && func2()`           |
-| \|\|     | conditional or, [conditional operators](#-Conditional-Operators)  | `5 % 3 = 2`                    |
-| !        | not                                                               | `!false`                       |
-| ^        | xor                                                               | `true \| false`                |
+| ==       | Equals                                                            | `1 == 1`                       |
+| !=       | Not equal                                                         | `1 != 2`                       |
+| <        | Less                                                              | `1 < 2`                        |
+| <=       | Less or equal                                                     | `1 <= 2`                       |
+| >        | Greater                                                           | `1 > 2`                        |
+| >=       | Greater or equal                                                  | `1 >= 2`                       |
+| is       | Is object of given type                                           | `5 is int`                     |
+| &        | Logical and                                                       | `true & true`                  |
+| \|       | Logical  or                                                       | `true \| false` `true \| true` |
+| &&       | Conditional and, uses [lazy evaluation](#-Lazy-Evaluation)        | `func1() && func2()`           |
+| \|\|     | Conditional or, uses [lazy evaluation](#-Lazy-Evaluation)         | `5 % 3 = 2`                    |
+| !        | Not                                                               | `!false`                       |
+| ^        | Xor                                                               | `true \| false`                |
 | op=      | `x op= y` is equivalent to `x = x op y`                           | `x &= true` = `x = x & true`   |
 
-### Conditional Operators
+### Lazy Evaluations
 
 The difference between logical and conditional operators is the lazy evaluation. This means, that conditional operators always evaluate both sides.
 
@@ -61,18 +61,18 @@ $13_{10}$ => $1101_2$
 | Operator          | Function                                                                 | Comment                                                          |
 | ----------------- | ------------------------------------------------------------------------ | ---------------------------------------------------------------- |
 | Boolean operators | &, \|, ^ work bitwise too. ([boolean operators](#-boolean-operators))    | $110_2$ & $1100_2 = 0100_2$                                      |
-| ~                 | complement / not                                                         | ~$1101_2 = 0010_2$                                               |
+| ~                 | Complement / not                                                         | ~ $1101_2 = 0010_2$                                               |
 | <<                | Left-shift converts number to int if to small                            | $1101_2$ << $4_{10} = 11010000_2$                                |
 | int >>>           | Right-shift unsigned, always uses $0$ to fill                            | $1101_2$ >>> $1_{10} = 0110_2$                                   |
-| int  >>          | Right-shift uses $0/1$, depending if it is a positive or negative number | $1101_2$ >> $1_{10} = 1110_2$ <br> $0101_2$ >> $1_{10} = 0010_2$ |
+| int  >>           | Right-shift uses $0/1$, depending if it is a positive or negative number | $1101_2$ >> $1_{10} = 1110_2$ <br> $0101_2$ >> $1_{10} = 0010_2$ |
 
 ## Type Operators
 
 | Operator | Function                                                                                             | Comment                        |
 | -------- | ---------------------------------------------------------------------------------------------------- | ------------------------------ |
-| is       | is object of given type? Returns a boolean                                                           | `5 is int`                     |
-| as       | converts object to another type, must be related (Eg. array => list)                                 | `IEnumerable<T> a as IList<T>` |
-| (T)x     | converts object to the given type, can use user-defined conversions (ToDo: user-defined conversions) | `(IList<T>) a`                 |
+| is       | Is object of given type? Returns a boolean                                                           | `5 is int`                     |
+| as       | Converts object to another type, must be related (Eg. array => list)                                 | `IEnumerable<T> a as IList<T>` |
+| (T)x     | Converts object to the given type, can use user-defined conversions (ToDo: user-defined conversions) | `(IList<T>) a`                 |
 
 ## Ternary Conditional
 
