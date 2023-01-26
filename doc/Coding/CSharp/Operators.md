@@ -22,22 +22,22 @@ In this chapter you can find almost all the operators available in c#.
 
 ## Boolean operators
 
-| Operator | Function                                                          | Comment                        |
-| -------- | ----------------------------------------------------------------- | ------------------------------ |
-| ==       | Equals                                                            | `1 == 1`                       |
-| !=       | Not equal                                                         | `1 != 2`                       |
-| <        | Less                                                              | `1 < 2`                        |
-| <=       | Less or equal                                                     | `1 <= 2`                       |
-| >        | Greater                                                           | `1 > 2`                        |
-| >=       | Greater or equal                                                  | `1 >= 2`                       |
-| is       | Is object of given type                                           | `5 is int`                     |
-| &        | Logical and                                                       | `true & true`                  |
-| \|       | Logical  or                                                       | `true \| false` `true \| true` |
-| &&       | Conditional and, uses [lazy evaluation](#-Lazy-Evaluation)        | `func1() && func2()`           |
-| \|\|     | Conditional or, uses [lazy evaluation](#-Lazy-Evaluation)         | `5 % 3 = 2`                    |
-| !        | Not                                                               | `!false`                       |
-| ^        | Xor                                                               | `true \| false`                |
-| op=      | `x op= y` is equivalent to `x = x op y`                           | `x &= true` = `x = x & true`   |
+| Operator | Function                                                   | Comment                        |
+| -------- | ---------------------------------------------------------- | ------------------------------ |
+| ==       | Equals                                                     | `1 == 1`                       |
+| !=       | Not equal                                                  | `1 != 2`                       |
+| <        | Less                                                       | `1 < 2`                        |
+| <=       | Less or equal                                              | `1 <= 2`                       |
+| >        | Greater                                                    | `1 > 2`                        |
+| >=       | Greater or equal                                           | `1 >= 2`                       |
+| is       | Is object of given type                                    | `5 is int`                     |
+| &        | Logical and                                                | `true & true`                  |
+| \|       | Logical  or                                                | `true \| false` `true \| true` |
+| &&       | Conditional and, uses [lazy evaluation](#-Lazy-Evaluation) | `func1() && func2()`           |
+| \|\|     | Conditional or, uses [lazy evaluation](#-Lazy-Evaluation)  | `5 % 3 = 2`                    |
+| !        | Not                                                        | `!false`                       |
+| ^        | Xor                                                        | `true \| false`                |
+| op=      | `x op= y` is equivalent to `x = x op y`                    | `x &= true` = `x = x & true`   |
 
 ### Lazy Evaluations
 
@@ -61,18 +61,58 @@ $13_{10}$ => $1101_2$
 | Operator          | Function                                                                 | Comment                                                          |
 | ----------------- | ------------------------------------------------------------------------ | ---------------------------------------------------------------- |
 | Boolean operators | &, \|, ^ work bitwise too. ([boolean operators](#-boolean-operators))    | $110_2$ & $1100_2 = 0100_2$                                      |
-| ~                 | Complement / not                                                         | ~ $1101_2 = 0010_2$                                               |
+| ~                 | Complement / not                                                         | ~ $1101_2 = 0010_2$                                              |
 | <<                | Left-shift converts number to int if to small                            | $1101_2$ << $4_{10} = 11010000_2$                                |
 | int >>>           | Right-shift unsigned, always uses $0$ to fill                            | $1101_2$ >>> $1_{10} = 0110_2$                                   |
 | int  >>           | Right-shift uses $0/1$, depending if it is a positive or negative number | $1101_2$ >> $1_{10} = 1110_2$ <br> $0101_2$ >> $1_{10} = 0010_2$ |
 
 ## Type Operators
 
-| Operator | Function                                                                                             | Comment                        |
-| -------- | ---------------------------------------------------------------------------------------------------- | ------------------------------ |
-| is       | Is object of given type? Returns a boolean                                                           | `5 is int`                     |
-| as       | Converts object to another type, must be related (Eg. array => list)                                 | `IEnumerable<T> a as IList<T>` |
-| (T)x     | Converts object to the given type, can use user-defined conversions (ToDo: user-defined conversions) | `(IList<T>) a`                 |
+| Operator | Function                                                                                                                                               | Comment                        |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------ |
+| is       | Is object of given type? Returns a boolean                                                                                                             | `5 is int`                     |
+| as       | Converts object to another type, must be related (Eg. array => list). Never throws an error. If conversion is impossible returns `null`.               | `IEnumerable<T> a as IList<T>` |
+| (T)x     | Converts object to the given type, can use user-defined conversions (ToDo: user-defined conversions). Throws an exception if conversion is impossible. | `(IList<T>) a`                 |
+
+### Custom Conversions
+
+With custom conversions you can convert between types.
+
+You can create implicit and explicit operators to convert from and to an object:
+
+```csharp
+class A
+{
+    public string StringA;
+
+    public A(string b)
+    {
+        this.b = b;
+    }
+
+    public static implicit operator B(A a) => new B(a.StringA);
+    public static explicit operator A(B b) => new(b.c);
+}
+
+class B
+{
+    public string c;
+
+    public B(string c)
+    {
+        this.c = c;
+    }
+}
+
+A a = new ("value");
+
+// implicit
+B b = a;
+// explicit
+A a2 = b;
+
+a.c
+```
 
 ## Ternary Conditional
 
