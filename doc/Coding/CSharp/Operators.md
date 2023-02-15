@@ -32,7 +32,7 @@ In this chapter you can find almost all the operators available in c#.
 | >=       | Greater or equal                                           | `1 >= 2`                       |
 | is       | Is object of given type                                    | `5 is int`                     |
 | &        | Logical and                                                | `true & true`                  |
-| \|       | Logical  or                                                | `true \| false` `true \| true` |
+| \|       | Logical or                                                 | `true \| false` `true \| true` |
 | &&       | Conditional and, uses [lazy evaluation](#-Lazy-Evaluation) | `func1() && func2()`           |
 | \|\|     | Conditional or, uses [lazy evaluation](#-Lazy-Evaluation)  | `func1() \|\| func2()`         |
 | !        | Not                                                        | `!false`                       |
@@ -41,7 +41,7 @@ In this chapter you can find almost all the operators available in c#.
 
 ### Lazy Evaluations
 
-The difference between logical and conditional operators is the lazy evaluation. This means, that logical operators always evaluate both sides.
+The difference between logical and conditional operators is the lazy evaluation. This means, that logical operators always evaluate both sides. Conditional operators on the other hand don't evaluate the second argument if it is already clear with the first. E.g. false & ? is always false no matter what ? is.
 
 ```csharp
 func1() & func2()
@@ -63,7 +63,7 @@ $13_{10}$ => $1101_2$
 | Boolean operators | &, \|, ^ work bitwise too. ([boolean operators](#-boolean-operators))                            | $110_2$ & $1100_2 = 0100_2$                                      |
 | ~                 | Complement / not                                                                                 | ~ $1101_2 = 0010_2$                                              |
 | <<                | Left-shift moves bits to the left. Deletes bits, which are outside the range of the result type. | $1101_2$ << $4_{10} = 11010000_2$                                |
-| >>>               | Right-shift moves bits to the right. unsigned, always uses $0$ to fill.                          | $1101_2$ >>> $1_{10} = 0110_2$                                   |
+| >>>               | Right-shift moves bits to the right. Unsigned, always uses $0$ to fill.                          | $1101_2$ >>> $1_{10} = 0110_2$                                   |
 | >>                | Right-shift uses $0/1$, depending if it is a positive or negative number.                        | $1101_2$ >> $1_{10} = 1110_2$ <br> $0101_2$ >> $1_{10} = 0010_2$ |
 
 ## Type Operators
@@ -78,13 +78,13 @@ $13_{10}$ => $1101_2$
 
 With custom conversions you can convert between types.
 
-You can create implicit and explicit operators to convert from and to an object. Implicit will automatically convert the value, explicit will only convert it if you trigger it (`(T)x`):
+You can create implicit and explicit operators to convert from and to an object. Implicit will automatically convert the value, it is meant for conversions with no data loss. Explicit will only convert it if you trigger it (`(T)x`), it is meant for conversions with some data loss:
 
 ```csharp
 class Dog
 {
-    private string name;
-    private string color;
+    public string name;
+    public string color;
 
     public Dog(string name, string color)
     {
@@ -100,8 +100,8 @@ class Dog
 
 class Cat
 {
-    private string name;
-    private string color;
+    public string name;
+    public string color;
 
     public Cat(string name, string color)
     {
@@ -115,7 +115,7 @@ class Cat
     }
 }
 
-class program {
+public class program {
     public static void Main(){
         Dog d = new Dog("Pluto", "orange");
 
@@ -125,8 +125,6 @@ class program {
         Dog d2 = (Dog)c1;
     }
 }
-
-
 ```
 
 ## Ternary Conditional
