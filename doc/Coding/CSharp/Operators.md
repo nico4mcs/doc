@@ -41,11 +41,11 @@ In this chapter you can find almost all the operators available in c#.
 
 ### Lazy Evaluations
 
-The difference between logical and conditional operators is the lazy evaluation. This means, that logical operators always evaluate both sides. Conditional operators on the other hand don't evaluate the second argument if it is already clear with the first. E.g. false & ? is always false no matter what ? is.
+The difference between logical and conditional operators is the lazy evaluation. This means, that logical operators always evaluate both sides. Conditional operators on the other hand do not evaluate the second argument if the result is already clear with the first argument. E.g. false & ? is always false no matter what ? is.
 
 ```csharp
 func1() & func2()
-// If func1() is false, func2() won't be executed.
+// If func1() is false, func2() will not be executed.
 func1() && func2()
 // Even if func1() is false, func2() will be executed.
 ```
