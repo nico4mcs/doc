@@ -57,6 +57,13 @@ jobs:
           # Optional, choose to skip unpacking the downloaded artifact(s)
           # default false
           skip_unpack: true
+      - 
+        name: Unzip zip
+        uses: montudor/action-zip@v1
+        with:
+          args: unzip -qq htmlFiles.zip -d build
+      - name: Rename file 
+        run: mv build/doc.html index.html
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
