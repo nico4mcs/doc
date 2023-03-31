@@ -14,4 +14,6 @@ Doc
  JavaScript
   Coding\Javascript\JavascriptAndCsharp.md
   Coding\Javascript\TypeErrors.md
+ General
+  Coding\General\UUID.md
   
